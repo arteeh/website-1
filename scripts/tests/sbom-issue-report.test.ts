@@ -63,6 +63,17 @@ const PENDING_IMAGE = {
   status: 'unavailable',
   errorCode: 'pending-mapping',
   error: 'ghcr.io/projectbluefin/dakota-gaming:testing publishes an SBOM but has no reviewed package mapping yet',
+  pending: true,
+}
+
+const PENDING_MISSING_SBOM_BLUEFIN = {
+  id: 'bluefin-lts',
+  product: 'bluefin',
+  image: 'ghcr.io/projectbluefin/bluefin-lts:stable',
+  status: 'unavailable',
+  errorCode: 'missing-sbom',
+  error: 'No SPDX referrer found for ghcr.io/projectbluefin/bluefin-lts:stable',
+  pending: true,
 }
 
 const WORKFLOW_URL = 'https://github.com/projectbluefin/website/actions/runs/1234567890'
@@ -321,6 +332,30 @@ describe('buildSbomIssuePlan — exact error codes, degraded entries, and eviden
   it('reports the pending-mapping digest so the artifact can be inspected', () => {
     const plan = buildSbomIssuePlan(makeAudit([PENDING_IMAGE]), [])
     expect(plan.create[0].body).toContain(PENDING_IMAGE.imageDigest)
+  })
+
+  it('does not alert on a pending record awaiting SBOM publication', () => {
+    const plan = buildSbomIssuePlan(makeAudit([PENDING_MISSING_SBOM_BLUEFIN]), [])
+    expect(plan.create).toHaveLength(0)
+    expect(plan.update).toHaveLength(0)
+    expect(plan.close).toHaveLength(0)
+  })
+
+  it('still alerts on a genuine missing-sbom for a mapped (non-pending) image', () => {
+    const plan = buildSbomIssuePlan(makeAudit([{ ...PENDING_MISSING_SBOM_BLUEFIN, pending: false }]), [])
+    expect(plan.create).toHaveLength(1)
+    expect(plan.create[0].title).toBe('[SBOM verification] bluefin: missing-sbom')
+  })
+
+  it('closes existing missing-sbom issue when all failing images are pending', () => {
+    const openIssues = [
+      { number: 773, title: '[SBOM verification] bluefin: missing-sbom', state: 'open' },
+    ]
+    const plan = buildSbomIssuePlan(makeAudit([PENDING_MISSING_SBOM_BLUEFIN]), openIssues)
+    expect(plan.create).toHaveLength(0)
+    expect(plan.update).toHaveLength(0)
+    expect(plan.close).toHaveLength(1)
+    expect(plan.close[0]).toEqual({ number: 773, state_reason: 'completed' })
   })
 })
 

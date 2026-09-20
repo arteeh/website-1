@@ -125,7 +125,13 @@ function issueBody(images, audit, options = {}) {
 export function buildSbomIssuePlan(audit, openIssues, options = {}) {
   const plan = { create: [], update: [], close: [] }
 
-  const failedImages = audit.images.filter(img => ALERTING_STATUSES.has(img.status))
+  const failedImages = audit.images.filter(
+    img => ALERTING_STATUSES.has(img.status)
+      // A pending record that has not yet published its SBOM is expected, not a
+      // failure: the registry marks it pendingSbom precisely so the daily job
+      // stops nagging until the publisher actually ships an SPDX referrer.
+      && !(img.pending && img.errorCode === 'missing-sbom'),
+  )
   const failedTitles = new Set()
   const titleToImages = new Map()
 

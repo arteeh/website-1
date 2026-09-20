@@ -186,6 +186,38 @@ describe('verifyRegistry — failure policy', () => {
     expect(result.images).toHaveLength(1)
     expect(result.images[0].status).toBe('unavailable')
     expect(result.images[0].errorCode).toBe('missing-sbom')
+    expect(result.images[0].pending).toBe(true)
+
+    const plan = buildSbomIssuePlan(result, [])
+    expect(plan.create).toHaveLength(0)
+  })
+
+  it('marks pendingSbom records with pending: true and suppresses missing-sbom issue plan creation', async () => {
+    const pendingRecord = Object.freeze({
+      id: 'bluefin-lts',
+      product: 'bluefin',
+      required: true,
+      pendingSbom: true,
+      image: 'ghcr.io/projectbluefin/bluefin-lts:stable',
+      certificateIdentityRegexp: '^https://.*$',
+      certificateOidcIssuer: 'https://token.actions.githubusercontent.com',
+      packages: {},
+    })
+    const err = new EvidenceError('missing-sbom', pendingRecord.image, 'no sbom')
+    const collect = vi.fn().mockRejectedValue(err)
+
+    const audit = await verifyRegistry([pendingRecord], { collectVerifiedImageSbom: collect })
+    expect(audit.images[0].pending).toBe(true)
+    expect(audit.images[0].errorCode).toBe('missing-sbom')
+
+    const plan = buildSbomIssuePlan(audit, [])
+    expect(plan.create).toHaveLength(0)
+  })
+
+  it('marks non-pending records with pending: false', async () => {
+    const collect = makeCollector(SBOM_WITH_ALL)
+    const result = await verifyRegistry([REQUIRED_RECORD], { collectVerifiedImageSbom: collect })
+    expect(result.images[0].pending).toBe(false)
   })
 
   it('includes checkedAt from the injected now() function', async () => {
@@ -219,6 +251,7 @@ describe('verifyRegistry — failure policy', () => {
       'ambiguousRequired',
       'ambiguousOptional',
       'rejected',
+      'pending',
     ])
     for (const key of Object.keys(image)) {
       expect(allowedKeys).toContain(key)

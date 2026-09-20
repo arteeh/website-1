@@ -1,16 +1,16 @@
 @media only screen and (max-width: 1280px) {
   @keyframes image {
     from {
-      right: 0;
+      right: 6%;
     }
     to {
-      right: -20%;
+      right: 0;
     }
   }
 
   #scene-landing .title .img-wrap img {
-    width: 592px;
-    right: -20%;
+    width: clamp(264px, 30vw, 360px);
+    right: 0;
   }
 
   #scene-users .container .img-wrap img {

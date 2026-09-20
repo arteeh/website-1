@@ -172,3 +172,40 @@ describe('registry selectors resolve known live ambiguities', () => {
     expect(result.values.systemd).toBe('259.8-1.fc44')
   })
 })
+
+describe('dakota image references name tags the publisher actually publishes', () => {
+  // ghcr.io/projectbluefin/dakota publishes `latest`, but its variant
+  // repositories do not: they publish `testing`/`stable` only. A variant
+  // pinned to `:latest` can never resolve, which is what produced the
+  // recurring `image-not-found` verification failure for dakota-nvidia.
+  const dakotaVariants = IMAGE_SBOM_REGISTRY.filter(
+    entry => entry.product === 'dakota' && entry.id !== 'dakota',
+  )
+
+  it('covers every dakota variant', () => {
+    expect(dakotaVariants.map(entry => entry.id).sort()).toEqual([
+      'dakota-gaming',
+      'dakota-nvidia',
+      'dakota-nvidia-gaming',
+    ])
+  })
+
+  it.each(dakotaVariants.map(entry => entry.id))('%s does not point at the unpublished :latest tag', (id) => {
+    const { image } = recordFor(id)
+    expect(image.endsWith(':latest')).toBe(false)
+    expect(image).toMatch(/:(?:testing|stable)$/)
+  })
+
+  it('keeps dakota-nvidia pending until it publishes an SPDX referrer', () => {
+    const entry = recordFor('dakota-nvidia')
+    expect(entry.image).toBe('ghcr.io/projectbluefin/dakota-nvidia:testing')
+    expect(entry.pendingSbom).toBe(true)
+    // The nvidia mapping stays declared: SectionPicker.vue consumes the key,
+    // and pendingSbom short-circuits before the mapping is resolved.
+    expect(Object.keys(entry.packages)).toEqual(['nvidia'])
+  })
+
+  it('still lets the base dakota image use :latest', () => {
+    expect(recordFor('dakota').image).toBe('ghcr.io/projectbluefin/dakota:latest')
+  })
+})

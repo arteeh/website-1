@@ -34,6 +34,13 @@ For a visual size or collision request, assert the affected elements'
 proof of the rendered result because containing blocks and responsive rules can
 constrain them.
 
+For transparent decorative artwork, record three geometries separately: the
+element rectangle, the alpha-visible artwork rectangle, and the alpha-visible
+intersection with the viewport. A global `overflow-x: hidden` can conceal real
+clipping while the element still extends beyond the viewport. When a report
+names the "site" rather than a route, inspect every production entry point that
+owns the referenced artwork instead of stopping at the first matching symbol.
+
 For isolated overlay copy, use a classed element instead of a bare semantic tag
 when the site has global element styling. A global `footer` rule can introduce
 panel paint, stacking, or padding that defeats component-scoped styles.

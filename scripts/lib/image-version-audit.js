@@ -79,6 +79,7 @@ export async function verifyRegistry(records, dependencies) {
       image: record.image,
       required: record.required,
       fields,
+      pending: record.pendingSbom === true,
     }
 
     let collected

@@ -186,7 +186,10 @@ export const IMAGE_SBOM_REGISTRY = Object.freeze([
     id: 'dakota-nvidia',
     product: 'dakota',
     required: false,
-    image: 'ghcr.io/projectbluefin/dakota-nvidia:latest',
+    // Only the base `dakota` image publishes a `latest` tag; the variants
+    // publish `testing`/`stable`, and this one has no SPDX referrer yet.
+    pendingSbom: true,
+    image: 'ghcr.io/projectbluefin/dakota-nvidia:testing',
     certificateIdentityRegexp: '^https://github.com/projectbluefin/dakota/.github/workflows/[^@]+@refs/.+$',
     certificateOidcIssuer: 'https://token.actions.githubusercontent.com',
     packages: {

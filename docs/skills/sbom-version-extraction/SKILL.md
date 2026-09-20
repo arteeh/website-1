@@ -213,6 +213,8 @@ Task 4 adds a registry-wide orchestrator on top of the extractor.
   can tell an explained removal from a broken verifier.
 - Unavailable entries never carry `values`. A projection cannot leak what the
   audit does not hold.
+- Every audit entry carries `pending` (`record.pendingSbom === true`), recording
+  whether the record is awaiting initial SBOM publication.
 
 **Status vocabulary is audit-only.** `public/stream-versions.yml` and
 `public/dakota-versions.json` still use `verified` / `unavailable`, because
@@ -358,5 +360,10 @@ relative specifier still fails there.
   same order.
 - Both `listForRepo` calls use `github.paginate`. Deduplication that only reads
   the first 100 open issues silently starts opening duplicates.
+- Pending records awaiting initial SBOM publication (`pending && errorCode === 'missing-sbom'`)
+  do NOT alert: the absence of an SBOM on an image marked `pendingSbom: true` is
+  expected, not a regression. When an SBOM is published, the image alerts with
+  `pending-mapping` so maintainers can review package mappings. Genuine
+  `missing-sbom` on active/mapped images continues to alert.
 - The generic run-failure issue is deduplicated by exact title too, via
   `syncWorkflowFailureIssue()`.

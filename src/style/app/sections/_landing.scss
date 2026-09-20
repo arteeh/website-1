@@ -31,10 +31,10 @@
 
     @keyframes image {
       from {
-        right: -30%;
+        right: 6%;
       }
       to {
-        right: -45%;
+        right: 0;
       }
     }
 
@@ -61,11 +61,11 @@
 
       img {
         display: block;
-        width: 692px;
+        width: clamp(280px, 30vw, 380px);
         position: absolute;
         top: 50%;
-        right: -30%;
-        transform: translateY(-55%);
+        right: 0;
+        transform: translateY(-50%);
       }
     }
 
