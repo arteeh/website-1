@@ -1,7 +1,6 @@
 {
   "TopBar": {
     "Docs": "Documentation",
-    "AskBluefin": "Ask Bluefin",
     "Blog": "Blog",
     "Changelog": "Changelogs",
     "Reports": "Reports",
@@ -32,7 +31,7 @@
   "Devs": {
     "Tag": "For",
     "Title": "Developers",
-    "Features": "Bluefin comes with an optional \"developer mode\" that transforms your device into a powerful workstation. It features container-focused workflows to get you started depending on where you're coming from, or bring your own. There are [15.6 million cloud native developers](https://www.cncf.io/announcements/2025/11/11/cncf-and-slashdata-survey-finds-cloud-native-ecosystem-surges-to-15-6m-developers/) in the world, wield these [industry-leading tools](https://landscape.cncf.io/) with ease...",
+    "Features": "Bluefin comes with an optional \"developer mode\" that transforms your device into a powerful workstation. It features container-focused workflows to get you started depending on where you're coming from, or bring your own. There are [20 million cloud native developers](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/) in the world, wield these [industry-leading tools](https://landscape.cncf.io/) with ease...",
     "BoxOne": "Visual Studio Code with devcontainers",
     "BoxTwo": "Work with your favorite Linux distributions with a container-focused terminal",
     "BoxThree": "Designed for cloud native development with the CNCF's best tools, including Kubernetes",
