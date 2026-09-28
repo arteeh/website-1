@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import type { MessageSchema } from '../../locales/schema'
-import { marked } from 'marked'
 import { useI18n } from 'vue-i18n'
 import {
   LangUsersAppendix,
   LangUsersBluefinImageURL,
   LangUsersListItems
 } from '../../content'
+import { renderMarkdown } from '../../utils/markdown'
 
 import SceneContent from '../common/SceneContent.vue'
 import SceneQuote from '../common/SceneQuote.vue'
@@ -46,7 +46,7 @@ const { t } = useI18n<MessageSchema>({
 
           <div
             v-if="LangUsersAppendix"
-            v-html="marked.parse(t('Users.Features'))"
+            v-html="renderMarkdown(t('Users.Features'))"
           />
           <SceneQuote
             quote="EvolutionQuote.Quote"

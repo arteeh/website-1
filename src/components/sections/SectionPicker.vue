@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { MessageSchema } from '../../locales/schema'
-import { marked } from 'marked'
 import { computed, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-
 import { getDakotaVersions } from '../../composables'
+
+import { renderMarkdownInline } from '../../utils/markdown'
 import ProductVersionCard from '../common/ProductVersionCard.vue'
 import SceneVisibilityChecker from '../common/SceneVisibilityChecker.vue'
 
@@ -94,7 +94,7 @@ onMounted(loadVersions)
       </div>
       <p
         class="legacy-download-note"
-        v-html="marked.parseInline(t('TryBluefin.LegacyDownloads'))"
+        v-html="renderMarkdownInline(t('TryBluefin.LegacyDownloads'))"
       />
 
       <div class="wolves-download-grid">

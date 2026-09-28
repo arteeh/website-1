@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { MessageSchema } from '../../locales/schema'
 import { useI18n } from 'vue-i18n'
+import { sanitizeHtml } from '../../utils/markdown'
 
 const { t } = useI18n<MessageSchema>({
   useScope: 'global'
@@ -21,7 +22,7 @@ const { t } = useI18n<MessageSchema>({
 
       <div class="bazaar-main">
         <div class="bazaar-description">
-          <p v-html="t('Bazaar.Description')" />
+          <p v-html="sanitizeHtml(t('Bazaar.Description'))" />
           <div class="bazaar-screenshot">
             <img
               src="/img/bazaar.png"
@@ -39,7 +40,7 @@ const { t } = useI18n<MessageSchema>({
       </div>
 
       <div class="bazaar-additional">
-        <p v-html="t('Bazaar.Additional')" />
+        <p v-html="sanitizeHtml(t('Bazaar.Additional'))" />
       </div>
 
       <div class="bazaar-buttons">

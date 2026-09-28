@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { MessageSchema } from '../../locales/schema'
-import { marked } from 'marked'
 import { useI18n } from 'vue-i18n'
 import { LangDevsAppendix, LangDevsTowerImageURL } from '../../content'
+import { renderMarkdown } from '../../utils/markdown'
 
 import SceneContent from '../common/SceneContent.vue'
 import SceneQuote from '../common/SceneQuote.vue'
@@ -26,7 +26,7 @@ const { t } = useI18n<MessageSchema>({
         </div>
         <div class="scene-arrow">
           <img src="/icons/arrow.svg" alt="">
-          <p v-html="marked.parse(t('Devs.TowerJoke'))" />
+          <p v-html="renderMarkdown(t('Devs.TowerJoke'))" />
         </div>
       </div>
 
@@ -140,11 +140,11 @@ const { t } = useI18n<MessageSchema>({
 
           <p
             v-if="LangDevsAppendix"
-            v-html="marked.parse(t('Devs.RuntimeContainers'))"
+            v-html="renderMarkdown(t('Devs.RuntimeContainers'))"
           />
           <p
             v-if="LangDevsAppendix"
-            v-html="marked.parse(t('Devs.CNJourney'))"
+            v-html="renderMarkdown(t('Devs.CNJourney'))"
           />
           <SceneQuote
             quote="InitiativeQuote.Quote"
