@@ -282,6 +282,22 @@ describe('update-content.yml restores the previous live data', () => {
     expect(reconcileIndex, 'the reconcile must come after the cache restore').toBeGreaterThan(restoreIndex)
     expect(reconcileIndex, 'the catalogue restore must run before the refresh').toBeLessThan(verifyIndex)
   })
+
+  it('restores the committed dakota-versions.json over the cache, so stale cache cannot clobber ISO updates', () => {
+    const steps = getAllSteps(workflow)
+    const restoreIndex = steps.findIndex(s => s.uses?.includes('actions/cache/restore'))
+    expect(restoreIndex, 'no cache restore step').toBeGreaterThanOrEqual(0)
+    const updateVersionsIndex = steps.findIndex(
+      s => s.run?.includes('npm run update:image-versions'),
+    )
+    expect(updateVersionsIndex, 'must find update:image-versions step').toBeGreaterThanOrEqual(0)
+    const reconcileIndex = steps.findIndex(
+      s => s.run?.includes('public/dakota-versions.json') && s.run?.includes('git checkout HEAD --'),
+    )
+    expect(reconcileIndex, 'a step must restore the committed dakota-versions.json').toBeGreaterThanOrEqual(0)
+    expect(reconcileIndex, 'the dakota-versions restore must run after cache restore').toBeGreaterThan(restoreIndex)
+    expect(reconcileIndex, 'the dakota-versions restore must run before update:image-versions').toBeLessThan(updateVersionsIndex)
+  })
 })
 
 // deploy.yml restores the same live-data cache (path includes public/experiences)

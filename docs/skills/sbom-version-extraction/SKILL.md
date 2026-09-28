@@ -63,7 +63,8 @@ generated. Do not use for Wolves version data; that lives in
 | `scripts/tests/bluefin-version-projection.test.ts` | Projection unit tests |
 | `scripts/tests/update-dakota-versions.test.ts` | Dakota updater integration tests |
 | `scripts/tests/update-stream-versions.test.ts` | Bluefin updater tests |
-| `scripts/tests/fixtures/dakota-linux-elements.spdx.json` | BuildStream SPDX fixture |
+| `scripts/tests/fixtures/dakota-linux-elements.spdx.json` | BuildStream SPDX fixture (historical/unit tests) |
+| `scripts/tests/fixtures/dakota-stable-linux-elements.spdx.json` | Live BuildStream SPDX fixture (`core/linux-fdsdk.bst` pin) |
 
 ## Critical correctness rules
 
@@ -157,10 +158,19 @@ still projects and promotes Bluefin and Dakota outputs atomically.
 `dakota-linux-elements.spdx.json` is a minimal BuildStream SPDX that exercises:
 
 - `linux` 6.12.40 from `bootstrap/linux-headers.bst` (headers, not kernel)
-- `linux` 7.0.7 from `components/linux.bst` (the real kernel)
+- `linux` 7.0.7 from `components/linux.bst` (historical kernel element)
 - `linux` `e3b0c44298...` from `patches/linux-some-fix.bst` (hash → rejected)
 - `NVIDIA-Linux-x86` 595.71.05 from `components/nvidia.bst` (unambiguous)
 - `linux` 7.1.8-ogc1 from `core/linux-ogc.bst` (kernel with suffix)
+
+`dakota-stable-linux-elements.spdx.json` pins the live Dakota `:stable` kernel element:
+- `linux` 7.2.6 from `core/linux-fdsdk.bst` (the booted kernel)
+- `linux` 6.18.41 from `freedesktop-sdk.bst:bootstrap/linux-headers.bst` (headers)
+- `linux` 7.2.2 from `freedesktop-sdk.bst:components/_private/bpf.bst` (bpf)
+
+In current Dakota `:stable` BuildStream builds, the booted kernel lives at
+`core/linux-fdsdk.bst`. The legacy `freedesktop-sdk.bst:components/linux.bst`
+element is no longer present.
 
 A name-only `linux` mapping must be ambiguous (three distinct accepted versions).
 Element-pinned mappings must resolve unambiguously to their single version.

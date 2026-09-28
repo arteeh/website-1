@@ -47,13 +47,15 @@ jobs:
             website-live-data-
           fail-on-cache-miss: false
 
-      # The live-data cache restores public/experiences/ from the previous run
-      # to keep cache key parity with the save step, but that directory includes
-      # catalogue.json which is tracked in git. Restoring from cache overwrites
-      # newly committed albums or track edits with the stale cached file.
-      # Restore the tracked catalogue from git before running refresh.
-      - name: Restore tracked catalogue
-        run: git checkout HEAD -- public/experiences/catalogue.json
+      # The live-data cache restores public/experiences/ and public/dakota-versions.json
+      # from the previous run to keep cache key parity with the save step.
+      # But catalogue.json has tracks authored in git, and dakota-versions.json
+      # has ISO downloads and hardware baseline committed in git. Restoring from
+      # cache overwrites newly committed albums or ISO updates (like alpha6) with
+      # the stale cached file, causing update:image-versions to carry forward old ISOs.
+      # Restore both tracked files from git before running refresh.
+      - name: Restore tracked catalogue and dakota metadata
+        run: git checkout HEAD -- public/experiences/catalogue.json public/dakota-versions.json
 
       - name: Setup Node.js
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7

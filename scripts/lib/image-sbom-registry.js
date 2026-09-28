@@ -175,11 +175,14 @@ export const IMAGE_SBOM_REGISTRY = Object.freeze([
     id: 'dakota',
     product: 'dakota',
     required: true,
-    image: 'ghcr.io/projectbluefin/dakota:latest',
+    image: 'ghcr.io/projectbluefin/dakota:stable',
     certificateIdentityRegexp: '^https://github.com/projectbluefin/dakota/.github/workflows/[^@]+@refs/.+$',
     certificateOidcIssuer: 'https://token.actions.githubusercontent.com',
     packages: {
-      kernel: { name: 'linux', element: 'freedesktop-sdk.bst:components/linux.bst', required: true },
+      // Reviewed against the published SPDX (sha256:b70ac4f2…) for image
+      // sha256:ddab2e2d…: `linux` also appears as bootstrap headers (6.18.x)
+      // and the bpf component (7.2.2); the booted kernel is core/linux-fdsdk.bst.
+      kernel: { name: 'linux', element: 'core/linux-fdsdk.bst', required: true },
       gnome: { name: 'gnome-shell', required: true },
       mesa: { name: 'mesa', element: 'freedesktop-sdk.bst:extensions/mesa/mesa.bst', required: true },
       systemd: { name: 'systemd', element: 'gnome-build-meta.bst:core-deps/systemd-base.bst', required: false },
@@ -193,9 +196,8 @@ export const IMAGE_SBOM_REGISTRY = Object.freeze([
     id: 'dakota-nvidia',
     product: 'dakota',
     required: false,
-    // Only the base `dakota` image publishes a `latest` tag; the variants
-    // publish `testing`/`stable`.
-    image: 'ghcr.io/projectbluefin/dakota-nvidia:testing',
+    // Both dakota and its variants publish `testing`/`stable`.
+    image: 'ghcr.io/projectbluefin/dakota-nvidia:stable',
     certificateIdentityRegexp: '^https://github.com/projectbluefin/dakota/.github/workflows/[^@]+@refs/.+$',
     certificateOidcIssuer: 'https://token.actions.githubusercontent.com',
     packages: {
@@ -213,7 +215,7 @@ export const IMAGE_SBOM_REGISTRY = Object.freeze([
     product: 'dakota',
     required: false,
     pendingSbom: true,
-    image: 'ghcr.io/projectbluefin/dakota-gaming:testing',
+    image: 'ghcr.io/projectbluefin/dakota-gaming:stable',
     certificateIdentityRegexp: '^https://github.com/projectbluefin/dakota/.github/workflows/[^@]+@refs/.+$',
     certificateOidcIssuer: 'https://token.actions.githubusercontent.com',
     packages: {},
@@ -223,7 +225,7 @@ export const IMAGE_SBOM_REGISTRY = Object.freeze([
     product: 'dakota',
     required: false,
     pendingSbom: true,
-    image: 'ghcr.io/projectbluefin/dakota-nvidia-gaming:testing',
+    image: 'ghcr.io/projectbluefin/dakota-nvidia-gaming:stable',
     certificateIdentityRegexp: '^https://github.com/projectbluefin/dakota/.github/workflows/[^@]+@refs/.+$',
     certificateOidcIssuer: 'https://token.actions.githubusercontent.com',
     packages: {},
