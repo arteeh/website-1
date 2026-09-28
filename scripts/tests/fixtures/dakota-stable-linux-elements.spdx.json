@@ -1,0 +1,61 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "dakota-stable-linux-elements",
+  "documentNamespace": "https://github.com/projectbluefin/dakota/sbom/787bf4d60fee70bebe6c868b7a2079a0eeea76aa",
+  "creationInfo": {
+    "creators": [
+      "Tool: buildstream-sbom",
+      "Organization: projectbluefin"
+    ],
+    "created": "2026-09-21T13:57:31Z"
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-core-linux-fdsdk.bst-0",
+      "filesAnalyzed": false,
+      "name": "linux",
+      "downloadLocation": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
+      "versionInfo": "7.2.6",
+      "sourceInfo": "git_repo",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceType": "bst-element",
+          "referenceLocator": "core/linux-fdsdk.bst"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-freedesktop-sdk.bst-bootstrap-linux-headers.bst-0",
+      "filesAnalyzed": false,
+      "name": "linux",
+      "downloadLocation": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
+      "versionInfo": "6.18.41",
+      "sourceInfo": "git_repo",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceType": "bst-element",
+          "referenceLocator": "freedesktop-sdk.bst:bootstrap/linux-headers.bst"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-freedesktop-sdk.bst-components--private-bpf.bst-0",
+      "filesAnalyzed": false,
+      "name": "linux",
+      "downloadLocation": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
+      "versionInfo": "7.2.2",
+      "sourceInfo": "git_repo",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceType": "bst-element",
+          "referenceLocator": "freedesktop-sdk.bst:components/_private/bpf.bst"
+        }
+      ]
+    }
+  ]
+}

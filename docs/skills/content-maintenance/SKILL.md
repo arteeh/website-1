@@ -117,12 +117,12 @@ nothing. Add an `element` selector instead of choosing the highest version.
 
 ### SBOM sources
 
-| Product | Registry | Image |
+| Product | Registry | Image / Tag |
 |---|---|---|
-| Bluefin stable | `ghcr.io/ublue-os/bluefin` | Cosign-verified, SPDX referrer |
-| Bluefin stable NVIDIA | `ghcr.io/ublue-os/bluefin-nvidia-open` | Cosign-verified, SPDX referrer |
-| Dakota | `ghcr.io/projectbluefin/dakota` | Cosign-verified, SPDX referrer |
-| Dakota NVIDIA | `ghcr.io/projectbluefin/dakota-nvidia` | Cosign-verified, SPDX referrer |
+| Bluefin stable | `ghcr.io/ublue-os/bluefin` | Cosign-verified, SPDX referrer (`:stable`) |
+| Bluefin stable NVIDIA | `ghcr.io/ublue-os/bluefin-nvidia-open` | Cosign-verified, SPDX referrer (`:stable`) |
+| Dakota | `ghcr.io/projectbluefin/dakota` | Cosign-verified, SPDX referrer (`:stable`, kernel element `core/linux-fdsdk.bst`) |
+| Dakota NVIDIA | `ghcr.io/projectbluefin/dakota-nvidia` | Cosign-verified, SPDX referrer (`:stable`) |
 
 ### Fail-closed behavior
 

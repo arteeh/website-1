@@ -106,6 +106,9 @@ const dakotaElements = JSON.parse(
 const bluefinCatalogers = JSON.parse(
   readFileSync(join(import.meta.dirname, 'fixtures/bluefin-stable-catalogers.syft.json'), 'utf8'),
 )
+const dakotaLinuxElements = JSON.parse(
+  readFileSync(join(import.meta.dirname, 'fixtures/dakota-stable-linux-elements.spdx.json'), 'utf8'),
+)
 const dakotaNvidiaDrivers = JSON.parse(
   readFileSync(join(import.meta.dirname, 'fixtures/dakota-nvidia-drivers.spdx.json'), 'utf8'),
 )
@@ -117,6 +120,22 @@ function recordFor(id: string) {
 }
 
 describe('registry selectors resolve known live ambiguities', () => {
+  it('pins Dakota kernel to the core linux element', () => {
+    const { packages } = recordFor('dakota')
+    expect(packages.kernel.element).toBe('core/linux-fdsdk.bst')
+
+    const result = extractMappedVersions(dakotaLinuxElements, { kernel: packages.kernel })
+    expect(result.ambiguous).toEqual([])
+    expect(result.values.kernel).toBe('7.2.6')
+  })
+
+  it('is ambiguous for Dakota kernel without the element pin', () => {
+    const result = extractMappedVersions(dakotaLinuxElements, {
+      kernel: { name: 'linux', required: true },
+    })
+    expect(result.ambiguous).toEqual(['kernel'])
+  })
+
   it('pins Dakota mesa to the mesa extension element', () => {
     const { packages } = recordFor('dakota')
     expect(packages.mesa.element).toBe('freedesktop-sdk.bst:extensions/mesa/mesa.bst')
@@ -125,7 +144,6 @@ describe('registry selectors resolve known live ambiguities', () => {
     expect(result.ambiguous).toEqual([])
     expect(result.values.mesa).toBe('26.0.6')
   })
-
   it('pins Dakota systemd to the gnome-build-meta systemd-base element', () => {
     const { packages } = recordFor('dakota')
     expect(packages.systemd.element).toBe('gnome-build-meta.bst:core-deps/systemd-base.bst')
@@ -199,31 +217,29 @@ describe('registry selectors resolve known live ambiguities', () => {
 })
 
 describe('dakota image references name tags the publisher actually publishes', () => {
-  // ghcr.io/projectbluefin/dakota publishes `latest`, but its variant
-  // repositories do not: they publish `testing`/`stable` only. A variant
-  // pinned to `:latest` can never resolve, which is what produced the
-  // recurring `image-not-found` verification failure for dakota-nvidia.
-  const dakotaVariants = IMAGE_SBOM_REGISTRY.filter(
-    entry => entry.product === 'dakota' && entry.id !== 'dakota',
+  // Both base dakota and its variant repositories publish `testing`/`stable`.
+  // Tracking `:stable` provides verified production builds across all images.
+  const dakotaImages = IMAGE_SBOM_REGISTRY.filter(
+    entry => entry.product === 'dakota',
   )
 
-  it('covers every dakota variant', () => {
-    expect(dakotaVariants.map(entry => entry.id).sort()).toEqual([
+  it('covers every dakota image', () => {
+    expect(dakotaImages.map(entry => entry.id).sort()).toEqual([
+      'dakota',
       'dakota-gaming',
       'dakota-nvidia',
       'dakota-nvidia-gaming',
     ])
   })
 
-  it.each(dakotaVariants.map(entry => entry.id))('%s does not point at the unpublished :latest tag', (id) => {
+  it.each(dakotaImages.map(entry => entry.id))('%s tracks the :stable tag', (id) => {
     const { image } = recordFor(id)
-    expect(image.endsWith(':latest')).toBe(false)
-    expect(image).toMatch(/:(?:testing|stable)$/)
+    expect(image).toMatch(/:stable$/)
   })
 
   it('carries a reviewed dakota-nvidia mapping now that the image publishes an SBOM', () => {
     const entry = recordFor('dakota-nvidia')
-    expect(entry.image).toBe('ghcr.io/projectbluefin/dakota-nvidia:testing')
+    expect(entry.image).toBe('ghcr.io/projectbluefin/dakota-nvidia:stable')
     // The mapping was reviewed against the published SPDX, so the record no
     // longer short-circuits to `pending-mapping`.
     expect(entry.pendingSbom).toBeUndefined()
@@ -239,7 +255,7 @@ describe('dakota image references name tags the publisher actually publishes', (
     expect(result.values.nvidia).toBe('615.71.09')
   })
 
-  it('still lets the base dakota image use :latest', () => {
-    expect(recordFor('dakota').image).toBe('ghcr.io/projectbluefin/dakota:latest')
+  it('pins base dakota to :stable', () => {
+    expect(recordFor('dakota').image).toBe('ghcr.io/projectbluefin/dakota:stable')
   })
 })
