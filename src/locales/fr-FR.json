@@ -1,12 +1,11 @@
 {
   "TopBar": {
     "Docs": "Documentation",
-    "AskBluefin": "Des Questions ?",
     "Blog": "Blog",
-    "Changelog": "Changelogs",
-    "Reports": "Reports",
+    "Changelog": "Notes de version",
+    "Reports": "Rapports",
     "Discussions": "Discussions",
-    "Feedback": "Vos Impressions",
+    "Feedback": "Vos retours",
     "Store": "Boutique (US uniquement)"
   },
   "Landing": {
@@ -32,7 +31,7 @@
   "Devs": {
     "Tag": "Pour les",
     "Title": "Développeurs",
-    "Features": "Bluefin propose un mode « développeur » optionnel qui transforme votre appareil en une puissante station de travail. Il propose des workflows axés sur les conteneurs pour vous aider à démarrer, quel que soit votre niveau, ou apportez les vôtres. Il y a [15,6 millions de développeurs cloud native](https://www.cncf.io/announcements/2025/11/11/cncf-and-slashdata-survey-finds-cloud-native-ecosystem-surges-to-15-6m-developers/) dans le monde — utilisez ces [outils de référence de l'industrie](https://landscape.cncf.io/) en toute simplicité...",
+    "Features": "Bluefin propose un mode « développeur » optionnel qui transforme votre appareil en une puissante station de travail. Il propose des workflows axés sur les conteneurs pour vous aider à démarrer, quel que soit votre niveau, ou apportez les vôtres. Il y a [20 millions de développeurs cloud native](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/) dans le monde — utilisez ces [outils de référence de l'industrie](https://landscape.cncf.io/) en toute simplicité...",
     "BoxOne": "Visual Studio Code avec devcontainers",
     "BoxTwo": "Travaillez avec vos distributions Linux favorites depuis un terminal axé conteneurs",
     "BoxThree": "Conçu pour le développement cloud native avec les meilleurs outils de la CNCF, y compris Kubernetes",
@@ -54,9 +53,9 @@
     "Title": "Mission",
     "Text": {
       "NewBreed": "Bluefin n’est pas seulement un logiciel, c’est une nouvelle espèce, adaptée pour survivre aux rigueurs d’un écosystème dominé par des géants tout en protégeant sa famille.",
-      "Change": "Nous croyons que l’expérience bureau doit changer. La technologie commence par l’ordinateur local, l’appareil que vous touchez, et il devrait être aussi essentiel que le reste de l’écosystème Linux.",
-      "CloudNative": "En introduisant des modèles cloud-native sur le bureau, nous espérons susciter l’intérêt pour l’informatique de bureau tout en répondant aux besoins de la prochaine génération de contributeurs open source. Bluefin est conçue pour être l’outil sur lequel vous comptez, pour faire ce que vous faites de mieux.",
-      "Sustainability": "Bluefin est axée sur la durabilité à long terme, englobant le logiciel, le matériel et les personnes."
+      "Change": "La technologie commence par l’ordinateur local, l’appareil que vous touchez, et il devrait être aussi essentiel que le reste de l’écosystème Linux.",
+      "CloudNative": "En introduisant des modèles cloud-native sur le bureau, nous espérons susciter l’intérêt pour l’informatique de bureau tout en répondant aux besoins de la prochaine génération de contributeurs open source. Bluefin est conçue pour être l’outil sur lequel vous comptez, pour faire ce que vous faites de mieux. La réponse est simple : utilisez ce qu’utilisent les experts en infrastructure. Le bureau Linux actuel ne nous y a pas conduits, mais nous croyons que ce qui a été fait peut être défait. Faisons-le mieux.",
+      "Sustainability": "Bluefin est axée sur la durabilité, englobant le logiciel, le matériel et les personnes."
     },
     "CleverGirl": "Ou elle pourrait nous éventrer en chemin. Maline, Bluefin.",
     "BluefinChillAlt": "Bluefin allongée et détendue"
@@ -64,7 +63,7 @@
   "SpreadQuote": {
     "Quote": "Il y a deux façons de répandre la lumière : être la bougie ou le miroir qui la reflète.",
     "Author": "Edith Wharton",
-    "WikiLink": "https://fr.wikipedia.org/wiki/Edith_Wharton"
+    "WikiLink": "https://fr.wikipedia.org/wiki/Edith_Warton"
   },
   "Video": {
     "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
@@ -77,13 +76,27 @@
   "Bazaar": {
     "Tag": "Retrouvez vos",
     "Title": "Applications",
-    "Description": "Bluefin utilise l'app store <a href=\"https://github.com/kolunmi/bazaar\" target=\"_blank\">Bazaar</a>, permettant d’installer et de gérer facilement toutes vos applications favorites depuis <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> ainsi qu’une sélection d’applications que nous recommandons.",
+    "Description": "Bluefin utilise la boutique d’applications <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a>, permettant d’installer et de gérer facilement toutes vos applications favorites depuis <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> ainsi qu’une sélection d’applications que nous recommandons.",
     "Additional": "De plus, Bluefin fournit <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> et des workflows conteneurisés, rendant l’exécution de n’importe quel logiciel simple. <br><br><strong>Bluefin est développé sur Bluefin.</strong>",
     "FlathubButton": "Voir les applications sur Flathub"
   },
   "TryBluefin": {
     "Tag": "Essayez",
-    "Title": "Bluefin"
+    "Title": "Bluefin",
+    "LegacyDownloads": "Les anciennes versions basées sur Fedora sont [encore disponibles au téléchargement](https://docs.projectbluefin.io/downloads/), mais elles ne sont pas recommandées pour les nouveaux utilisateurs.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ Alpha.",
+        "AlphaBadgeSub": "Prenez les précautions appropriées.",
+        "ComingSoonBadge": "Bientôt disponible",
+        "Dakota": "Dakota",
+        "DakotaDescription": "La forme finale. Bluefin perfectionné.",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Server",
+        "ServerDescription": "Le système d’exploitation serveur FSDK de référence au monde."
+      }
+    }
   },
   "Community": {
     "Tag": "Notre",
@@ -96,6 +109,7 @@
       "DiscussionsButton": "Discussions"
     },
     "Contribute": {
+      "Tag": "Nos contributeurs",
       "Title": "Contribuer",
       "Description": "Aidez au développement de Bluefin en contribuant au code, en signalant des bugs ou en proposant des fonctionnalités. Vous pouvez aussi sponsoriser des contributeurs individuellement.",
       "Button": "Visiter notre GitHub",
@@ -112,7 +126,8 @@
     "Title": "Notre équipe",
     "Description": "Bluefin est construit par un groupe dédié de mainteneurs et contributeurs.",
     "AlumniTitle": "Présentant des alumni issus d'entreprises telles que",
-    "SponsorsTitle": "Nos sponsors"
+    "SponsorsTitle": "Nos sponsors",
+    "Attribution": "Statistiques fournies par"
   },
   "Footer": {
     "PoweredBy": "Propulsé par",
