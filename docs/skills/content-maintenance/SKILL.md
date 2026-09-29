@@ -57,6 +57,37 @@ declare no orphan keys. Verify with `npx vitest run src/tests/locale-completenes
 - An unlisted page is added to navigation or metadata.
 - Generated output is patched instead of regenerated.
 
+## Locale completeness
+
+`src/locales/en-US.json` is the message schema; `src/locales/schema.ts` derives
+`MessageSchema` from it. `src/tests/locale-completeness.test.ts` treats the two
+directions differently, and the difference matters when a translation issue
+reports a count:
+
+- **Missing keys are advisory.** vue-i18n falls back to `en-US`, so a partial
+  translation is a legitimate state. Closing a translation issue means
+  translating the values, not adding the keys as English placeholders.
+- **Orphaned keys are a hard failure.** A key a locale declares but `en-US`
+  lacks can never render.
+
+An orphaned key is not always a mistake in the locale. Before deleting one, grep
+the components for it:
+
+```bash
+rg -n "TopBar.AskBluefin" src/
+```
+
+If a component reads the key, the source locale is the file that is wrong —
+add the key to `en-US.json` and every locale that already carries it becomes
+valid at once. Deleting it from each locale in turn would silence the test while
+leaving the nav item untranslated and falling back to the raw key string.
+
+Values that are proper names, brand names, URLs, and Vue interpolation tokens
+stay in the source form even in a complete translation: author attributions
+(`EvolutionQuote.Author`), `WikiLink` URLs, `Video.Url`, `TryBluefin.Title`, and
+card product names such as `TryBluefin.Wolves.Cards.Dakota`. Translate the copy
+around them (`AlphaBadgeSub`, `ServerDescription`), not the names.
+
 ## Front-page downloads
 
 The three main-site download cards are owned by
