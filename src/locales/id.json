@@ -1,0 +1,156 @@
+{
+  "TopBar": {
+    "Docs": "Dokumentasi",
+    "Blog": "Blog",
+    "Changelog": "Catatan Perubahan",
+    "Reports": "Laporan",
+    "Discussions": "Diskusi",
+    "Feedback": "Masukan",
+    "Store": "Toko (Khusus AS)"
+  },
+  "Landing": {
+    "Title": "Meja kerja Linux generasi berikutnya, dirancang untuk keandalan, performa, dan keberlanjutan.",
+    "DiscoverButton": "Jelajahi",
+    "TryOutButton": "Coba"
+  },
+  "Users": {
+    "Tag": "Untuk",
+    "Title": "Anda",
+    "Intro": "Bluefin adalah sistem operasi untuk komputer Anda. Yang terbaik dari kedua dunia: keandalan dan kemudahan Chromebook, dengan kekuatan desktop GNOME.",
+    "Box1": "Aplikasi dari Flathub",
+    "Box2": "Nyaris tanpa perawatan",
+    "Box3": "Driver GPU sudah termasuk",
+    "Features": "Dengan pembaruan berbasis citra otomatis dan toko aplikasi grafis yang sederhana, Bluefin dirancang agar tidak menghalangi Anda. Dapatkan yang Anda inginkan tanpa mengorbankan kestabilan sistem. Klien Linux telah berkembang, sebuah awal yang bersih untuk generasi berikutnya. Lihat [pengumuman blog](https://www.ypsidanger.com/announcing-project-bluefin/) dan [dokumentasi pengantar](https://docs.projectbluefin.io) untuk informasi lebih lanjut.",
+    "BluefinArtworkAlt": "Bluefin memandang masa depan Linux - ternyata ada di sebelah kiri"
+  },
+  "EvolutionQuote": {
+    "Quote": "Evolusi adalah proses percabangan dan perluasan yang terus-menerus.",
+    "Author": "Stephen Jay Gould",
+    "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
+  },
+  "Devs": {
+    "Tag": "Untuk",
+    "Title": "Pengembang",
+    "Features": "Bluefin dilengkapi dengan \"mode pengembang\" opsional yang mengubah perangkat Anda menjadi meja kerja yang bertenaga. Mode ini menyediakan alur kerja yang berfokus pada kontainer untuk membantu Anda memulai, apa pun latar belakang Anda, atau Anda bisa membawa sendiri. Ada [20 juta pengembang cloud native](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/) di dunia, gunakan [alat-alat terkemuka di industri](https://landscape.cncf.io/) ini dengan mudah...",
+    "BoxOne": "Visual Studio Code dengan devcontainer",
+    "BoxTwo": "Bekerja dengan distro Linux favorit Anda melalui terminal yang berfokus pada kontainer",
+    "BoxThree": "Dirancang untuk pengembangan cloud native dengan alat-alat terbaik dari CNCF, termasuk Kubernetes",
+    "BoxFour": "Homebrew aktif secara bawaan, alat yang sama seperti di Mac Anda",
+    "BoxFive": "Podman Desktop untuk manajemen kontainer grafis",
+    "BoxSix": "IDE JetBrains tinggal satu perintah lagi",
+    "RuntimeContainers": "Keberadaan [runtime kontainer](https://podman.io) membuka potensi tim Anda. Gunakan alat yang sama yang menggerakkan infrastruktur internet modern di desktop Anda. Bluefin tahu cara dikirim ke produksi.",
+    "CNJourney": "Kami menyasar operator Linux yang tidak memakai Linux di desktop karena Linux telah mengecewakan mereka. Jadi kami membawa desktop Linux melewati perjalanan cloud native-nya dan membangunnya bersama komunitas. ",
+    "KarlArtworkAlt": "Karl menjulang di atas Backlog",
+    "TowerJoke": "<b>Menara</b> di atas Backlog Anda!"
+  },
+  "InitiativeQuote": {
+    "Quote": "Jadilah yang bergerak, bukan yang digerakkan.",
+    "Author": "Commander Zavala (Destiny)",
+    "WikiLink": "https://en.wikipedia.org/wiki/Lance_Reddick"
+  },
+  "Mission": {
+    "Tag": "Tujuan",
+    "Title": "Misi",
+    "Text": {
+      "NewBreed": "Bluefin bukan sekadar perangkat lunak, dia adalah jenis baru dari hewan, yang beradaptasi untuk bertahan di dalam ekosistem yang dikuasai oleh raksasa-raksasa, sambil melindungi keluarganya.",
+      "Change": "Teknologi dimulai dari komputer lokal, perangkat yang Anda sentuh, dan seharusnya serumai bagian lain dari ekosistem Linux.",
+      "CloudNative": "Dengan memperkenalkan pola cloud native ke desktop, kami berharap dapat menyalakan kembali minat terhadap komputasi desktop sekaligus mendampingi generasi berikutnya dari kontributor sumber terbuka. Bluefin dirancang menjadi alat yang Anda andalkan untuk melakukan apa yang Anda paling kuasai. Jawaban bagi kami sederhana: gunakan apa yang dipakai para ahli infrastruktur. Desktop Linux saat ini belum membawa kami ke sana, tetapi kami percaya bahwa yang sudah dibuat dapat dibongkar. Mari kita buat lebih baik.",
+      "Sustainability": "Bluefin adalah soal keberlanjutan, mencakup perangkat lunak, perangkat keras, dan orang-orangnya."
+    },
+    "CleverGirl": "Atau dia mungkin mencabik kami di tengah jalan. Cerdas.",
+    "BluefinChillAlt": "Bluefin rebahan dan santai"
+  },
+  "SpreadQuote": {
+    "Quote": "Ada dua cara untuk menyebarkan cahaya: menjadi lilin atau cermin yang memantulkannya.",
+    "Author": "Edith Wharton",
+    "WikiLink": "https://en.wikipedia.org/wiki/Edith_Wharton"
+  },
+  "Video": {
+    "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
+    "Title": "Pengenalan Bluefin",
+    "Text": {
+      "Passion": "Project Bluefin bukan produk jadi, ia adalah proyek passion yang berjalan terus, dikelola oleh [penyemarai cloud native](https://github.com/ublue-os/bluefin/graphs/contributors) yang menginginkan pengalaman desktop Linux yang lebih andal dan mudah dirawat. Lihat juga [isu terbuka](https://github.com/ublue-os/bluefin/issues).",
+      "StateOfTheArt": "Dia mewakili puncak teknologi: makhluk yang indah dan unik. Predator sempurna untuk dunia yang pasti akan menghadapi tantangan. Kita harus beradaptasi. Kita dapat melakukannya **bersama**."
+    }
+  },
+  "Bazaar": {
+    "Tag": "Jalankan favorit Anda",
+    "Title": "Aplikasi",
+    "Description": "Bluefin memanfaatkan toko aplikasi <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a>, sehingga memudahkan pemasangan dan pengelolaan semua aplikasi favorit Anda dari <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> serta daftar pilihan aplikasi yang menurut kami akan Anda sukai.",
+    "Additional": "Selain itu, Bluefin menyediakan <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> dan alur kerja kontainer aplikasi, sehingga menjalankan perangkat lunak apa pun menjadi mudah. Karena seluruh dunia perangkat lunak sudah berada di dalam kontainer, menggunakannya menjadi cepat dan efisien! <br><br><strong>Bluefin dikembangkan di atas Bluefin.</strong>",
+    "FlathubButton": "Lihat aplikasi di Flathub"
+  },
+  "TryBluefin": {
+    "Tag": "Coba",
+    "Title": "Bluefin",
+    "LegacyDownloads": "Versi lama berbasis Fedora [masih tersedia untuk diunduh](https://docs.projectbluefin.io/downloads/), tetapi tidak direkomendasikan bagi pengguna baru.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ Alfa.",
+        "AlphaBadgeSub": "Ambil tindakan pencegahan yang sesuai.",
+        "ComingSoonBadge": "Segera Hadir",
+        "Dakota": "Dakota",
+        "DakotaDescription": "Bentuk Final. Bluefin yang Sempurna.",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Server",
+        "ServerDescription": "Sistem operasi server FSDK terbaik di dunia."
+      }
+    }
+  },
+  "Community": {
+    "Tag": "Milik kami",
+    "Title": "Komunitas",
+    "Documentation": {
+      "Title": "Dokumentasi",
+      "Description": "Mencari dukungan? Kunjungi situs dokumentasi kami untuk panduan terkini tentang pemasangan, penggunaan umum, dan pemecahan masalah.",
+      "Button": "Lihat Dokumentasi",
+      "DiscordButton": "Gabung Discord kami",
+      "DiscussionsButton": "Diskusi"
+    },
+    "Contribute": {
+      "Tag": "Kontributor kami",
+      "Title": "Berkontribusi",
+      "Description": "Bantu pengembangan Bluefin dengan menyumbang kode, melaporkan bug, atau mengajukan permintaan fitur. Anda juga dapat mensponsori kontributor tertentu jika ingin berkontribusi secara finansial.",
+      "Button": "Kunjungi GitHub kami",
+      "DonateButton": "Donasi"
+    }
+  },
+  "News": {
+    "Title": "Berita",
+    "Loading": "Memuat artikel blog...",
+    "NoPosts": "Tidak ada artikel blog ditemukan.",
+    "ViewAll": "Lihat semua artikel di blog resmi"
+  },
+  "Flock": {
+    "Title": "Kawanan Kami",
+    "Description": "Bluefin dikembangkan oleh sekelompok maintainer dan kontributor yang berdedikasi penuh.",
+    "AlumniTitle": "Menampilkan alumni dari perusahaan seperti",
+    "SponsorsTitle": "Sponsor kami",
+    "Attribution": "Statistik disediakan oleh"
+  },
+  "Footer": {
+    "PoweredBy": "Ditenagai Oleh",
+    "Project": {
+      "Title": "Project Bluefin Dibangun Dengan",
+      "Ublue": "Perangkat komunitas yang dirancang untuk membangkitkan kembali desktop Linux. Dibangun dengan cinta pada permainan ini. Selamat datang di indie Cloud Native."
+    },
+    "Credits": {
+      "Intro": "Seluruh karya seni dibuat oleh manusia.",
+      "Website": "Situs web - [Jan Dolanský](https://dolansky.dev/) & [Kyle Gospodnetich](https://kylegospodneti.ch/)",
+      "Logos": "Logo dan Wallpaper - [Jacob Schnurr](https://www.etsy.com/shop/JSchnurrCommissions?listing_id=1425657775)",
+      "ImageEdit": "Pengeditan Gambar - [Delphic Melody](https://github.com/delphicmelody/)",
+      "Wallpapers": "Wallpaper Ilustrasi Bluefin - Andy Frazer, [DragonsofWales](https://www.etsy.com/fi-en/shop/DragonsofWales?ref=profile_header)",
+      "Translations": "Terjemahan - [Tulip Blossom](https://github.com/tulilirockz), [karhima](https://github.com/karhima), [Niklas](https://niklas.tech), [Crono](https://github.com/EPOCHvoyager), [Tsu-gu](https://github.com/Tsu-gu) & [Mimolet](https://github.com/theMimolet)",
+      "Thanks": "Terima Kasih - [Aaron Lake](https://www.linkedin.com/in/aaron-lake/), [Brian Ketelsen](https://brian.dev/), [Dustin Kirkland](https://www.kotterva.com/), [Wayne Witzel](https://github.com/wwitzel3), & [Marco Ceppi](https://github.com/marcoceppi)"
+    },
+    "Copyright": "Hak cipta {date} © Project Bluefin dan Universal Blue"
+  },
+  "Navbar": {
+    "ForYou": "Untuk Anda",
+    "ForDevs": "Untuk Pengembang",
+    "OurMission": "Misi Kami",
+    "TryOut": "Coba",
+    "Community": "Komunitas"
+  }
+}
