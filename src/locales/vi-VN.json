@@ -1,6 +1,12 @@
 {
   "TopBar": {
-    "Reports": "Reports"
+    "Docs": "Tài liệu",
+    "Blog": "Blog",
+    "Changelog": "Nhật ký thay đổi",
+    "Reports": "Báo cáo",
+    "Discussions": "Thảo luận",
+    "Feedback": "Phản hồi",
+    "Store": "Cửa hàng (Chỉ tại Mỹ)"
   },
   "Landing": {
     "Title": "Thế hệ tiếp theo của hệ thống làm việc dựa trên hệ điều hành Linux, được thiết kế dành cho sự ổn định, hiệu suất, và mang tính bền vững.",
@@ -10,42 +16,141 @@
   "Users": {
     "Tag": "Chỉ dành cho",
     "Title": "Bạn",
+    "Intro": "Bluefin là hệ điều hành dành cho máy tính của bạn. Tốt nhất của cả hai thế giới: độ tin cậy và sự dễ dùng của một chiếc Chromebook, cùng sức mạnh của giao diện GNOME.",
     "Box1": "Các ứng dụng từ Flathub",
     "Box2": "Bảo trì gần như không cần thiết",
-    "Box3": "Tích hợp trình điều khiển dành cho GPU"
+    "Box3": "Tích hợp trình điều khiển dành cho GPU",
+    "Features": "Với các bản cập nhật tự động dựa trên image và một cửa hàng ứng dụng đồ họa đơn giản, Bluefin được thiết kế để không làm phiền bạn. Có được điều bạn muốn mà không phải hy sinh sự ổn định của hệ thống. Phần mềm Linux đã tiến hoá, một khởi đầu sạch cho thế hệ tiếp theo. Hãy xem [bài viết công bố](https://www.ypsidanger.com/announcing-project-bluefin/) và [tài liệu giới thiệu](https://docs.projectbluefin.io) để biết thêm thông tin.",
+    "BluefinArtworkAlt": "Bluefin đang nhìn về tương lai của Linux — dường như ở bên trái"
+  },
+  "EvolutionQuote": {
+    "Quote": "Tiến hoá là quá trình không ngừng phân nhánh và mở rộng.",
+    "Author": "Stephen Jay Gould",
+    "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
   },
   "Devs": {
     "Tag": "Dành cho",
     "Title": "Các Lập trình viên",
-    "BoxOne": "Visual Studio Code với môi trường devcontainers.",
-    "BoxTwo": "Giao diện dòng lệnh tích hợp trong container",
-    "BoxThree": "Devpod cho môi trường phát triển dưới dạng mã nguồn",
-    "BoxFour": "Homebrew sẵn sàng sử dụng",
+    "Features": "Bluefin đi kèm với một \"chế độ lập trình viên\" tùy chọn, biến thiết bị của bạn thành một trạm làm việc mạnh mẽ. Nó cung cấp các quy trình tập trung vào container để bạn bắt đầu, tùy thuộc vào nền tảng bạn đến từ đâu, hoặc bạn có thể tự mang theo. Thế giới có [20 triệu nhà phát triển cloud native](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/), hãy sử dụng dễ dàng các [công cụ dẫn đầu ngành](https://landscape.cncf.io/)...",
+    "BoxOne": "Visual Studio Code với devcontainers",
+    "BoxTwo": "Làm việc với các bản phân phối Linux yêu thích của bạn bằng một terminal tập trung vào container",
+    "BoxThree": "Thiết kế cho việc phát triển cloud native với những công cụ tốt nhất của CNCF, bao gồm Kubernetes",
+    "BoxFour": "Homebrew on-tap sẵn sàng, cùng bộ công cụ như trên máy Mac của bạn",
+    "BoxFive": "Podman Desktop để quản lý container bằng giao diện đồ họa",
+    "BoxSix": "JetBrains IDE chỉ cách bạn một lệnh",
+    "RuntimeContainers": "Việc tích hợp [container runtime](https://podman.io) mở khóa tiềm năng của nhóm bạn. Dùng chính những công cụ vận hành hạ tầng internet hiện đại ngay trên desktop của bạn. Bluefin biết cách triển khai lên môi trường thực tế.",
+    "CNJourney": "Chúng tôi nhắm đến những người dùng Linux không dùng Linux trên desktop vì nó đã khiến họ thất vọng. Vì vậy, chúng tôi đưa desktop Linux trải qua hành trình cloud native và xây dựng nó như một cộng đồng. ",
+    "KarlArtworkAlt": "Karl cao lên vượt trội so với Backlog",
     "TowerJoke": "<b>Vươn cao</b> vượt qua mọi Thách thức!"
+  },
+  "InitiativeQuote": {
+    "Quote": "Hãy là người chủ động tiến lên, chứ không phải người bị dẫn dắt.",
+    "Author": "Commander Zavala (Destiny)",
+    "WikiLink": "https://en.wikipedia.org/wiki/Lance_Reddick"
   },
   "Mission": {
     "Tag": "Chúng tôi",
     "Title": "Sứ mệnh",
-    "BluefinChillAlt": "Bluefin laying down and chilling"
+    "Text": {
+      "NewBreed": "Bluefin không chỉ là phần mềm, cô ấy là một loài mới, được thích nghi để sống sót trong một hệ sinh thái bị chi phối bởi những kẻ khổng lồ, đồng thời bảo vệ gia đình mình.",
+      "Change": "Công nghệ bắt đầu từ chiếc máy tính cục bộ, thiết bị mà bạn chạm vào, và nó cũng nên thiết yếu không kém phần còn lại của hệ sinh thái Linux.",
+      "CloudNative": "Bằng cách đưa các mô hình cloud native vào desktop, chúng tôi hy vọng khơi dậy sự hứng thú với việc tính toán trên desktop, đồng thời đáp ứng thế hệ người đóng góp mã nguồn mở tiếp theo. Bluefin được thiết kế để là công cụ mà bạn dựa vào để làm điều bạn giỏi nhất. Câu trả lời của chúng tôi rất đơn giản: hãy dùng những gì mà chuyên gia hạ tầng đang sử dụng. Desktop Linux hiện tại chưa đưa chúng ta đến đó, nhưng chúng tôi tin rằng thứ đã được tạo ra thì cũng có thể được tạo lại. Hãy làm cho nó tốt hơn.",
+      "Sustainability": "Bluefin nói về tính bền vững, bao trọm cả phần mềm, phần cứng và con người."
+    },
+    "CleverGirl": "Hoặc cô ấy có thể rút ruột chúng ta dọc đường đi. Con gái ranh mãnh.",
+    "BluefinChillAlt": "Bluefin nằm xuống nghỉ ngơi thư thái"
+  },
+  "SpreadQuote": {
+    "Quote": "Có hai cách để lan tỏa ánh sáng: hoặc là ngọn nến, hoặc là tấm gương phản chiếu nó.",
+    "Author": "Edith Wharton",
+    "WikiLink": "https://en.wikipedia.org/wiki/Edith_Wharton"
   },
   "Video": {
     "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
-    "Title": "Giới thiệu về Bluefin Linux"
+    "Title": "Giới thiệu về Bluefin Linux",
+    "Text": {
+      "Passion": "Project Bluefin không phải là một sản phẩm đã hoàn thiện, cô ấy là một dự án đam mê còn đang tiếp diễn, được duy trì bởi những [người đam mê cloud native](https://github.com/ublue-os/bluefin/graphs/contributors) những người hướng tới một trải nghiệm desktop Linux đáng tin cậy và dễ bảo trì hơn. Hãy xem các [vấn đề đang mở](https://github.com/ublue-os/bluefin/issues).",
+      "StateOfTheArt": "Cô ấy đại diện cho đỉnh cao của công nghệ: một sinh vật tuyệt đẹp và độc đáo. Một kẻ săn mồi hoàn hảo cho một thế giới chắc chắn sẽ phải đối mặt với thử thách. Chúng ta phải thích nghi. Chúng ta có thể làm điều đó **cùng nhau**."
+    }
+  },
+  "Bazaar": {
+    "Tag": "Chạy những ứng dụng bạn yêu thích",
+    "Title": "Ứng dụng",
+    "Description": "Bluefin sử dụng cửa hàng ứng dụng <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a>, cho phép bạn dễ dàng cài đặt và quản lý mọi ứng dụng yêu thích từ <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> cùng danh sách ứng dụng được tuyển chọn mà chúng tôi nghĩ bạn sẽ yêu thích.",
+    "Additional": "Ngoài ra, Bluefin còn cung cấp <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> và các quy trình container cho ứng dụng, giúp việc chạy bất kỳ phần mềm nào trở nên dễ dàng. Vì toàn bộ thế giới phần mềm đều đến từ container, nên việc sử dụng chúng trở nên nhanh chóng và hiệu quả! <br><br><strong>Bluefin được phát triển trên chính Bluefin.</strong>",
+    "FlathubButton": "Xem ứng dụng trên Flathub"
   },
   "TryBluefin": {
-    "Title": "Dùng thử Bluefin"
+    "Tag": "Dùng thử",
+    "Title": "Bluefin",
+    "LegacyDownloads": "Các phiên bản dựa trên Fedora cũ hơn [vẫn có thể tải xuống](https://docs.projectbluefin.io/downloads/) nhưng không được khuyến nghị cho người dùng mới.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ Alpha.",
+        "AlphaBadgeSub": "Hãy áp dụng các biện pháp phòng ngừa thích hợp.",
+        "ComingSoonBadge": "Sắp ra mắt",
+        "Dakota": "Dakota",
+        "DakotaDescription": "Dạng hoàn thiện tối đa. Bluefin được tinh chế.",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Server",
+        "ServerDescription": "Hệ điều hành máy chủ FSDK hàng đầu thế giới."
+      }
+    }
+  },
+  "Community": {
+    "Tag": "Chúng tôi",
+    "Title": "Cộng đồng",
+    "Documentation": {
+      "Title": "Tài liệu",
+      "Description": "Bạn đang cần hỗ trợ? Hãy xem trang tài liệu của chúng tôi để có những hướng dẫn mới nhất về cài đặt, sử dụng chung và khắc phục sự cố.",
+      "Button": "Xem tài liệu",
+      "DiscordButton": "Tham gia Discord của chúng tôi",
+      "DiscussionsButton": "Thảo luận"
+    },
+    "Contribute": {
+      "Tag": "Người đóng góp của chúng tôi",
+      "Title": "Đóng góp",
+      "Description": "Hãy hỗ trợ quá trình phát triển của Bluefin bằng cách đóng góp mã nguồn, báo cáo lỗi hoặc đề xuất tính năng. Bạn cũng có thể tài trợ cho từng người đóng góp nếu muốn đóng góp bằng tiền.",
+      "Button": "Truy cập GitHub của chúng tôi",
+      "DonateButton": "Quyên góp"
+    }
+  },
+  "News": {
+    "Title": "Tin tức",
+    "Loading": "Đang tải các bài viết blog...",
+    "NoPosts": "Không tìm thấy bài viết blog nào.",
+    "ViewAll": "Xem tất cả bài viết trên blog chính thức"
   },
   "Flock": {
     "Title": "Đội Ngũ Của Chúng Tôi",
-    "Description": "Bluefin được xây dựng bởi một nhóm các bảo trì và cộng tác viên đầy nhiệt huyết."
+    "Description": "Bluefin được xây dựng bởi một nhóm các bảo trì và cộng tác viên đầy nhiệt huyết.",
+    "AlumniTitle": "Có sự tham gia của cựu thành viên từ các công ty như",
+    "SponsorsTitle": "Nhà tài trợ của chúng tôi",
+    "Attribution": "Số liệu thống kê được cung cấp bởi"
   },
   "Footer": {
+    "PoweredBy": "Được hỗ trợ bởi",
+    "Project": {
+      "Title": "Project Bluefin được xây dựng với",
+      "Ublue": "Một bộ công cụ cộng đồng được thiết kế để thay đổi hoàn toàn desktop Linux. Được xây dựng với tình yêu trong sản phẩm. Chào mừng đến với Cloud Native độc lập."
+    },
+    "Credits": {
+      "Intro": "Toàn bộ hình minh họa được tạo ra bởi con người.",
+      "Website": "Trang web - [Jan Dolanský](https://dolansky.dev/) & [Kyle Gospodnetich](https://kylegospodneti.ch/)",
+      "Logos": "Logo và hình nền - [Jacob Schnurr](https://www.etsy.com/shop/JSchnurrCommissions?listing_id=1425657775)",
+      "ImageEdit": "Chỉnh sửa hình ảnh - [Delphic Melody](https://github.com/delphicmelody/)",
+      "Wallpapers": "Hình nền minh họa Bluefin - Andy Frazer, [DragonsofWales](https://www.etsy.com/fi-en/shop/DragonsofWales?ref=profile_header)",
+      "Translations": "Bản dịch - [Tulip Blossom](https://github.com/tulilirockz), [karhima](https://github.com/karhima), [Niklas](https://niklas.tech), [Crono](https://github.com/EPOCHvoyager), [Tsu-gu](https://github.com/Tsu-gu) & [Mimolet](https://github.com/theMimolet)",
+      "Thanks": "Cảm ơn đặc biệt - [Aaron Lake](https://www.linkedin.com/in/aaron-lake/), [Brian Ketelsen](https://brian.dev/), [Dustin Kirkland](https://www.kotterva.com/), [Wayne Witzel](https://github.com/wwitzel3), & [Marco Ceppi](https://github.com/marcoceppi)"
+    },
     "Copyright": "Bản quyền {date} © Project Bluefin và Universal Blue"
   },
   "Navbar": {
     "ForYou": "Dành cho Bạn",
     "ForDevs": "Lập trình viên",
     "OurMission": "Sứ mệnh",
-    "TryOut": "Dùng thử"
+    "TryOut": "Dùng thử",
+    "Community": "Cộng đồng"
   }
 }
