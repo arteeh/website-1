@@ -147,6 +147,32 @@ Verify a new locale's strings actually resolve through vue-i18n (not just that
 the JSON parses) with a throwaway probe that calls
 `i18n.global.t('Some.Key', {}, { locale: '<tag>' })` — passing the locale as
 the third argument is required, since the global instance defaults to `en-US`.
+## Locale completeness
+
+`src/tests/locale-completeness.test.ts` warns on keys a locale is missing and
+hard-fails on keys a locale declares that `en-US.json` does not define. Both
+states are invisible in review, so measure them instead of eyeballing the file:
+
+```bash
+npx vitest run src/tests/locale-completeness.test.ts --reporter=verbose
+```
+
+Three defects to check by hand for the locale you own:
+
+- **Missing keys** — a key absent from the locale silently falls back to English.
+- **Orphaned keys** — a key the source locale no longer defines is dead weight;
+  remove it, never keep it "just in case".
+- **Untranslated values** — a value byte-identical to `en-US.json` is usually an
+  untranslated string (brand names, URLs, and product names such as `Dakota`,
+  `Utah`, and `Bluefin Server` are legitimate exceptions).
+
+An empty string in `en-US.json` (`TryBluefin.Wolves.Cards.UtahDescription`) is a
+deliberate empty value, not a missing string: mirror it as `""` rather than
+inventing copy, so the key structure stays aligned with the source.
+
+Note that a red `locale-completeness` run on another locale is a pre-existing
+failure, not a regression from your change; check your own file's two cases
+individually before reporting.
 
 ## Verification
 

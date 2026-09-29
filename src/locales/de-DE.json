@@ -1,7 +1,6 @@
 {
   "TopBar": {
     "Docs": "Dokumentation",
-    "AskBluefin": "Frag Bluefin",
     "Blog": "Blog",
     "Changelog": "Changelogs",
     "Reports": "Reports",
@@ -83,7 +82,21 @@
   },
   "TryBluefin": {
     "Tag": "Bluefin",
-    "Title": "Ausprobieren"
+    "Title": "Ausprobieren",
+    "LegacyDownloads": "Die älteren Fedora-basierten Versionen sind [weiterhin zum Download verfügbar](https://docs.projectbluefin.io/downloads/), werden für Neuanwender jedoch nicht empfohlen.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ Alpha.",
+        "AlphaBadgeSub": "Bitte entsprechende Vorsichtsmaßnahmen treffen.",
+        "ComingSoonBadge": "Demnächst",
+        "Dakota": "Dakota",
+        "DakotaDescription": "Die Endform. Bluefin, vollendet.",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Server",
+        "ServerDescription": "Das führende FSDK-Server-Betriebssystem der Welt."
+      }
+    }
   },
   "Community": {
     "Tag": "Unsere",
@@ -96,6 +109,7 @@
       "DiscussionsButton": "Diskussionen"
     },
     "Contribute": {
+      "Tag": "Unsere Mitwirkenden",
       "Title": "Mitwirken",
       "Description": "Hilf bei Bluefins Entwicklung – mit Code, Bug-Reports oder Feature-Requests. Du kannst auch einzelne Mitwirkende sponsern, wenn du finanzielle Unterstützung geben willst.",
       "Button": "Besuche uns auf GitHub",
@@ -112,7 +126,8 @@
     "Title": "Unsere Mitwirkenden",
     "Description": "Bluefin wird von einer engagierten Gruppe von Maintainern und Mitwirkenden entwickelt.",
     "AlumniTitle": "Mit Alumni aus Firmen wie",
-    "SponsorsTitle": "Unsere Sponsoren"
+    "SponsorsTitle": "Unsere Sponsoren",
+    "Attribution": "Statistiken bereitgestellt von"
   },
   "Footer": {
     "PoweredBy": "Powered By",
