@@ -1,6 +1,12 @@
 {
   "TopBar": {
-    "Reports": "Reports"
+    "Docs": "Documentatie",
+    "Blog": "Blog",
+    "Changelog": "Changelogs",
+    "Reports": "Rapporten",
+    "Discussions": "Discussies",
+    "Feedback": "Feedback",
+    "Store": "Winkel (alleen VS)"
   },
   "Landing": {
     "Title": "De volgende generatie Linux-werkstation, ontworpen voor betrouwbaarheid, prestaties en duurzaamheid.",
@@ -10,42 +16,141 @@
   "Users": {
     "Tag": "Voor",
     "Title": "Jou",
-    "Box1": "Applicaties door Flathub",
-    "Box2": "Bijna geen onderhoud",
-    "Box3": "Inclusief GPU-stuurprogramma's"
+    "Intro": "Bluefin is een besturingssysteem voor jouw computer. Het beste van beide werelden: de betrouwbaarheid en het gebruiksgemak van een Chromebook, met de kracht van een GNOME-bureaublad.",
+    "Box1": "Applicaties via Flathub",
+    "Box2": "Vrijwel geen onderhoud",
+    "Box3": "Inclusief GPU-stuurprogramma's",
+    "Features": "Met automatische, op installatie-images gebaseerde updates en een eenvoudige grafische applicatiewinkel is Bluefin ontworpen om je niet in de weg te zitten. Krijg wat je wilt zonder de stabiliteit van het systeem op te geven. De Linux-client is geëvolueerd, een schone start voor de volgende generatie. Bekijk het [aankondigingsblogbericht](https://www.ypsidanger.com/announcing-project-bluefin/) en de [introductiedocumentatie](https://docs.projectbluefin.io) voor meer informatie.",
+    "BluefinArtworkAlt": "Bluefin kijkt naar de toekomst van Linux - die ligt blijkbaar links"
+  },
+  "EvolutionQuote": {
+    "Quote": "Evolutie is een proces van voortdurend vertakken en uitbreiden.",
+    "Author": "Stephen Jay Gould",
+    "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
   },
   "Devs": {
     "Tag": "Voor",
     "Title": "Ontwikkelaars",
-    "BoxOne": "Visual Studio Code met devcontainers.",
-    "BoxTwo": "Containergericht terminal",
-    "BoxThree": "Devpod voor ontwikkelomgevingen als code",
-    "BoxFour": "Homebrew direct beschikbaar",
-    "TowerJoke": "<b>Toren</b> over je Backlog!"
+    "Features": "Bluefin wordt geleverd met een optionele \"ontwikkelaarsmodus\" die je apparaat verandert in een krachtig werkstation. Het biedt containergerichte workflows zodat je snel op gang bent, ongeacht waar je vandaan komt, of breng je eigen setup mee. Er zijn wereldwijd [20 miljoen cloud-native ontwikkelaars](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/), gebruik deze [toonaangevende tools](https://landscape.cncf.io/) zonder gedoe...",
+    "BoxOne": "Visual Studio Code met devcontainers",
+    "BoxTwo": "Werk met je favoriete Linux-distributies via een containergerichte terminal",
+    "BoxThree": "Ontworpen voor cloud-native ontwikkeling met de beste tools van de CNCF, inclusief Kubernetes",
+    "BoxFour": "Homebrew standaard via tap, dezelfde tools als op je Mac",
+    "BoxFive": "Podman Desktop voor grafisch containergeheer",
+    "BoxSix": "JetBrains-IDE's met één commando binnen handbereik",
+    "RuntimeContainers": "Het meenemen van een [containerruntime](https://podman.io) ontketent het potentieel van je team. Gebruik op je bureaublad dezelfde tools die moderne internetinfrastructuur aandrijven. Bluefin weet hoe je naar productie levert.",
+    "CNJourney": "We richten ons op Linux-beheerders die Linux niet op het bureaublad gebruiken omdat het ze in de steek heeft gelaten. Dus brengen we het Linux-bureaublad mee op zijn cloud-native reis en bouwen we het als een gemeenschap. ",
+    "KarlArtworkAlt": "Karl torent boven de Backlog uit",
+    "TowerJoke": "<b>Toren</b> boven je Backlog!"
+  },
+  "InitiativeQuote": {
+    "Quote": "Wees degene die beweegt, niet degene die bewogen wordt.",
+    "Author": "Commander Zavala (Destiny)",
+    "WikiLink": "https://en.wikipedia.org/wiki/Lance_Reddick"
   },
   "Mission": {
     "Tag": "Onze",
     "Title": "Missie",
+    "Text": {
+      "NewBreed": "Bluefin is niet alleen software, zij is een nieuw soort dier, aangepast om te overleven in de ruwe omstandigheden van een ecosysteem dat door reuzen wordt gedomineerd, terwijl zij haar familie beschermt.",
+      "Change": "Technologie begint bij de lokale computer, het apparaat dat je aanraakt, en het zou net zo essentieel moeten zijn als de rest van het Linux-ecosysteem.",
+      "CloudNative": "Door cloud-native patronen op het bureaublad te introduceren hopen we weer belangstelling voor desktopcomputing te wekken, terwijl we inspelen op de volgende generatie bijdragers aan opensource. Bluefin is ontworpen als de tool waarop je vertrouwt om te doen waar je het beste in bent. Het antwoord is voor ons eenvoudig: gebruik wat de experts in infrastructuur gebruiken. Het huidige Linux-bureaublad heeft ons daar niet gebracht, maar wij geloven dat wat gemaakt is, ongemaakt kan worden. Laten we het beter maken.",
+      "Sustainability": "Bluefin gaat over duurzaamheid, over de software, de hardware én de mensen."
+    },
+    "CleverGirl": "Of ze ons onderweg uitploft. Slimme meid.",
     "BluefinChillAlt": "Bluefin liggend en chillend"
+  },
+  "SpreadQuote": {
+    "Quote": "Er zijn twee manieren om licht te verspreiden: het kaarsje zijn, of de spiegel die het weerspiegelt.",
+    "Author": "Edith Wharton",
+    "WikiLink": "https://en.wikipedia.org/wiki/Edith_Wharton"
   },
   "Video": {
     "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
-    "Title": "Bluefin Linux introductie"
+    "Title": "Introductie Bluefin",
+    "Text": {
+      "Passion": "Project Bluefin is geen afgerond product, zij is een doorlopend passieproject, onderhouden door [cloud-native liefhebbers](https://github.com/ublue-os/bluefin/graphs/contributors) die streven naar een betrouwbaardere en onderhoudsvriendelijkere Linux-bureaubladervaring. Bekijk de [open issues](https://github.com/ublue-os/bluefin/issues).",
+      "StateOfTheArt": "Ze vertegenwoordigt het neusje van de teenlaar: een prachtig en uniek wezen. Een volmaakte roofdier voor een wereld die onvermijdelijk uitdagingen tegemoet zal gaan. We moeten ons aanpassen. We kunnen het **samen** doen."
+    }
+  },
+  "Bazaar": {
+    "Tag": "Gebruik je favoriete",
+    "Title": "Applicaties",
+    "Description": "Bluefin gebruikt de <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a> appstore, waardoor je al je favoriete applicaties eenvoudig kunt installeren en beheren via <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> en een zorgvuldig geselecteerde lijst met apps die je zeker gaat leuk vinden.",
+    "Additional": "Daarnaast levert Bluefin <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> en workflows voor applicatiecontainers, waardoor het uitvoeren van elke software een eenvoudige zaak is. Omdat de hele softwarewereld in containers zit, wordt het gebruik ervan snel en efficiënt! <br><br><strong>Bluefin is ontwikkeld op Bluefin.</strong>",
+    "FlathubButton": "Bekijk apps op Flathub"
   },
   "TryBluefin": {
-    "Title": "Probeer Bluefin"
+    "Tag": "Probeer",
+    "Title": "Bluefin",
+    "LegacyDownloads": "De oudere, op Fedora gebaseerde versies zijn [nog steeds te downloaden](https://docs.projectbluefin.io/downloads/), maar worden niet aanbevolen voor nieuwe gebruikers.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ Alfa.",
+        "AlphaBadgeSub": "Neem de juiste voorzorgsmaatregelen.",
+        "ComingSoonBadge": "Binnenkort beschikbaar",
+        "Dakota": "Dakota",
+        "DakotaDescription": "De laatste vorm. Bluefin, volmaakt.",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Server",
+        "ServerDescription": "Het toonaangevende FSDK-serverbesturingssysteem ter wereld."
+      }
+    }
+  },
+  "Community": {
+    "Tag": "Onze",
+    "Title": "Community",
+    "Documentation": {
+      "Title": "Documentatie",
+      "Description": "Op zoek naar ondersteuning? Bekijk onze documentatiesite voor actuele handleidingen over installatie, algemeen gebruik en probleemoplossing.",
+      "Button": "Bekijk de documentatie",
+      "DiscordButton": "Word lid van onze Discord",
+      "DiscussionsButton": "Discussies"
+    },
+    "Contribute": {
+      "Tag": "Onze bijdragers",
+      "Title": "Bijdragen",
+      "Description": "Help mee aan de ontwikkeling van Bluefin door code bij te dragen, bugs te melden of nieuwe functies voor te stellen. Je kunt individuele bijdragers ook financieel steunen als je wilt bijdragen.",
+      "Button": "Bezoek onze GitHub",
+      "DonateButton": "Doneren"
+    }
+  },
+  "News": {
+    "Title": "Nieuws",
+    "Loading": "Blogberichten laden...",
+    "NoPosts": "Geen blogberichten gevonden.",
+    "ViewAll": "Bekijk alle berichten op de officiële blog"
   },
   "Flock": {
     "Title": "Onze Flock",
-    "Description": "Bluefin is gebouwd door een toegewijde groep maintainers en bijdragers."
+    "Description": "Bluefin wordt gebouwd door een toegewijde groep maintainers en bijdragers.",
+    "AlumniTitle": "Met alumni van bedrijven zoals",
+    "SponsorsTitle": "Onze sponsors",
+    "Attribution": "Statistieken aangeleverd door"
   },
   "Footer": {
+    "PoweredBy": "Mogelijk gemaakt door",
+    "Project": {
+      "Title": "Project Bluefin is gebouwd met",
+      "Ublue": "Een communitytoolkit die de Linux-desktop opnieuw wil opstarten. Gebouwd uit liefde voor het vak. Welkom bij indie Cloud Native."
+    },
+    "Credits": {
+      "Intro": "Alle artwork is door mensen gemaakt.",
+      "Website": "Website - [Jan Dolanský](https://dolansky.dev/) & [Kyle Gospodnetich](https://kylegospodneti.ch/)",
+      "Logos": "Logo's en wallpapers - [Jacob Schnurr](https://www.etsy.com/shop/JSchnurrCommissions?listing_id=1425657775)",
+      "ImageEdit": "Beeldbewerking - [Delphic Melody](https://github.com/delphicmelody/)",
+      "Wallpapers": "Bluefin illustratieve wallpaper - Andy Frazer, [DragonsofWales](https://www.etsy.com/fi-en/shop/DragonsofWales?ref=profile_header)",
+      "Translations": "Vertalingen - [Tulip Blossom](https://github.com/tulilirockz), [karhima](https://github.com/karhima), [Niklas](https://niklas.tech), [Crono](https://github.com/EPOCHvoyager), [Tsu-gu](https://github.com/Tsu-gu) & [Mimolet](https://github.com/theMimolet)",
+      "Thanks": "Speciale dank - [Aaron Lake](https://www.linkedin.com/in/aaron-lake/), [Brian Ketelsen](https://brian.dev/), [Dustin Kirkland](https://www.kotterva.com/), [Wayne Witzel](https://github.com/wwitzel3), & [Marco Ceppi](https://github.com/marcoceppi)"
+    },
     "Copyright": "Copyright {date} © Project Bluefin en Universal Blue"
   },
   "Navbar": {
     "ForYou": "Voor Jou",
     "ForDevs": "Voor Ontwikkelaars",
     "OurMission": "Onze Missie",
-    "TryOut": "Probeer"
+    "TryOut": "Probeer",
+    "Community": "Community"
   }
 }
