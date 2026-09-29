@@ -1,0 +1,156 @@
+{
+  "TopBar": {
+    "Docs": "दस्तावेज़",
+    "Blog": "ब्लॉग",
+    "Changelog": "परिवर्तन लॉग",
+    "Reports": "रिपोर्ट",
+    "Discussions": "चर्चाएँ",
+    "Feedback": "प्रतिक्रिया",
+    "Store": "स्टोर (केवल अमेरिका)"
+  },
+  "Landing": {
+    "Title": "अगली पीढ़ी का लिनक्स वर्कस्टेशन, जिसे विश्वसनीयता, प्रदर्शन और टिकाऊपन के लिए बनाया गया है।",
+    "DiscoverButton": "खोजें",
+    "TryOutButton": "आज़माएँ"
+  },
+  "Users": {
+    "Tag": "इनके लिए",
+    "Title": "आप",
+    "Intro": "Bluefin आपके कंप्यूटर के लिए एक ऑपरेटिंग सिस्टम है। दोनों दुनिया का सर्वोत्तम: Chromebook की विश्वसनीयता और उपयोग में आसानी, GNOME डेस्कटॉप की शक्ति के साथ।",
+    "Box1": "Flathub से एप्लिकेशन",
+    "Box2": "लगभग शून्य रखरखाव",
+    "Box3": "शामिल GPU ड्राइवर",
+    "Features": "स्वचालित इमेज-आधारित अपडेट और एक सरल ग्राफ़िकल एप्लिकेशन स्टोर के साथ, Bluefin को इस तरह बनाया गया है कि वह आपकी राह में न आए। बिना सिस्टम की स्थिरता का त्याग किए जो चाहिए वह पाएँ। लिनक्स क्लाइंट विकसित हो चुका है, अगली पीढ़ी के लिए एक स्वच्छ शुरुआत। अधिक जानकारी के लिए [घोषणा ब्लॉग पोस्ट](https://www.ypsidanger.com/announcing-project-bluefin/) और [परिचयात्मक दस्तावेज़](https://docs.projectbluefin.io) देखें।",
+    "BluefinArtworkAlt": "Bluefin लिनक्स के भविष्य को देखता हुआ - वह कथित तौर पर बाईं ओर है"
+  },
+  "EvolutionQuote": {
+    "Quote": "विकास एक निरंतर शाखायन और विस्तार की प्रक्रिया है।",
+    "Author": "स्टीफ़न जे गॉल्ड",
+    "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
+  },
+  "Devs": {
+    "Tag": "इनके लिए",
+    "Title": "डेवलपर",
+    "Features": "Bluefin के साथ एक वैकल्पिक \"डेवलपर मोड\" आता है जो आपके डिवाइस को एक शक्तिशाली वर्कस्टेशन में बदल देता है। इसमें कंटेनर-केंद्रित वर्कफ़्लो हैं जो आपको शुरुआत करने में मदद करते हैं, चाहे आप कहाँ से आ रहे हों, या आप अपना साथ ला सकते हैं। दुनिया में [2000 लाख क्लाउड-नेटिव डेवलपर](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/) हैं, इन [उद्योग-श्रेष्ठ उपकरणों](https://landscape.cncf.io/) को आसानी से अपनाएँ...",
+    "BoxOne": "देवकंटेनर के साथ विज़ुअल स्टूडियो कोड",
+    "BoxTwo": "कंटेनर-केंद्रित टर्मिनल के साथ अपने पसंदीदा लिनक्स वितरणों के साथ काम करें",
+    "BoxThree": "CNCF के सर्वोत्तम उपकरणों, जिनमें Kubernetes शामिल है, के साथ क्लाउड-नेटिव विकास के लिए डिज़ाइन किया गया",
+    "BoxFour": "होमब्रू डिफ़ॉल्ट रूप से उपलब्ध, वही उपकरण जो आपके Mac पर हैं",
+    "BoxFive": "ग्राफ़िकल कंटेनर प्रबंधन के लिए Podman Desktop",
+    "BoxSix": "JetBrains IDEs एक कमांड दूर",
+    "RuntimeContainers": "[कंटेनर रनटाइम](https://podman.io) की उपलब्धता आपकी टीम की क्षमता को खोल देती है। अपने डेस्कटॉप पर वही उपकरण अपनाएँ जो आधुनिक इंटरनेट अवसंरचना को चलाते हैं। Bluefin जानता है कि प्रोडक्शन तक कैसे पहुँचाना है।",
+    "CNJourney": "हम उन Linux ऑपरेटरों को लक्षित करते हैं जो डेस्कटॉप पर Linux का उपयोग नहीं करते क्योंकि यह उनके लिए विफल रहा है। इसलिए हम Linux डेस्कटॉप को उसकी क्लाउड-नेटिव यात्रा के साथ आगे ले जा रहे हैं और उसे एक समुदाय के रूप में बना रहे हैं। ",
+    "KarlArtworkAlt": "बैकलॉग के ऊपर टावर करता हुआ कार्ल",
+    "TowerJoke": "अपने बैकलॉग पर <b>टावर</b> करो!"
+  },
+  "InitiativeQuote": {
+    "Quote": "वह बनो जो आगे बढ़ता है, जो बुलाया जाता है नहीं।",
+    "Author": "कमांडर ज़ावाला (डेस्टिनी)",
+    "WikiLink": "https://en.wikipedia.org/wiki/Lance_Reddick"
+  },
+  "Mission": {
+    "Tag": "हमारा",
+    "Title": "मिशन",
+    "Text": {
+      "NewBreed": "Bluefin सिर्फ़ सॉफ़्टवेयर नहीं है, यह एक नई नस्ल का जीव है, जो विशालकाय जीवों से भरे पारिस्थितिक तंत्र की कठिनाइयों में भी बचने के लिए अनुकूलित है, और अपने परिवार की रक्षा करता है।",
+      "Change": "तकनीक स्थानीय कंप्यूटर से शुरू होती है, उस डिवाइस से जिसे आप छूते हैं, और इसे Linux के बाकी पारिस्थितिक तंत्र जितना ही अनिवार्य होना चाहिए।",
+      "CloudNative": "डेस्कटॉप में क्लाउड-नेटिव पैटर्न पेश करके हम आशा करते हैं कि डेस्कटॉप कंप्यूटिंग में रुचि जगेगी, साथ ही अगली पीढ़ी के ओपन-सोर्स योगदानकर्ताओं की ज़रूरतें भी पूरी होंगी। Bluefin को इस तरह बनाया गया है कि वह वह उपकरण बने जिस पर आप अपना सर्वोत्तम काम करने के लिए निर्भर रहते हैं। हमारे लिए उत्तर आसान है: वही अपनाएँ जो इंफ्रास्ट्रक्चर के विशेषज्ञ उपयोग करते हैं। मौजूदा Linux डेस्कटॉप हमें वहाँ नहीं पहुँचा पाया, लेकिन हम मानते हैं कि जो बनाया गया है, उसे बनाया नहीं भी जा सकता। आइए इसे बेहतर बनाएँ।",
+      "Sustainability": "Bluefin टिकाऊपन के बारे में है — सॉफ़्टवेयर, हार्डवेयर और लोगों, तीनों को समेटते हुए।"
+    },
+    "CleverGirl": "या वह रास्ते में ही हमें आँतें निकल सकती है। चतुर लड़की।",
+    "BluefinChillAlt": "लेटते हुए और आराम करते हुए Bluefin"
+  },
+  "SpreadQuote": {
+    "Quote": "रोशनी फैलाने के दो तरीके हैं: या तो आप मोमबत्ती बनो, या उस मोमबत्ती का दर्पण जो उसे परावर्तित करे।",
+    "Author": "एडिथ व्हार्टन",
+    "WikiLink": "https://en.wikipedia.org/wiki/Edith_Wharton"
+  },
+  "Video": {
+    "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
+    "Title": "Bluefin का परिचय",
+    "Text": {
+      "Passion": "Project Bluefin कोई पूर्ण उत्पाद नहीं है, यह एक चलता हुआ जोशीला परियोजना-प्रोजेक्ट है जिसे [क्लाउड-नेटिव उत्साही](https://github.com/ublue-os/bluefin/graphs/contributors) संचालित करते हैं, जो Linux डेस्कटॉप अनुभव अधिक विश्वसनीय और रखरखाव-योग्य बनाना चाहते हैं। [खुले मुद्दे](https://github.com/ublue-os/bluefin/issues) देखें।",
+      "StateOfTheArt": "यह अत्याधुनिक तकनीक का प्रतिनिधित्व करती है : एक सुंदर और अनोखा जीव। एक ऐसी दुनिया के लिए एक आदर्श शिकारी जो निश्चित रूप से चुनौतियों का सामना करेगा। हमें अनुकूल होना होगा। हम यह **साथ** कर सकते हैं।"
+    }
+  },
+  "Bazaar": {
+    "Tag": "अपने पसंदीदा ऐप चलाएँ",
+    "Title": "एप्लिकेशन",
+    "Description": "Bluefin <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a> एप स्टोर का उपयोग करता है, जिससे आपके सभी पसंदीदा एप्लिकेशन <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> से आसानी से इंस्टॉल और प्रबंधित किए जा सकते हैं, साथ ही हमारी चुनी हुई उन एप्स की सूची भी जिन्हें आप पसंद करेंगे।",
+    "Additional": "इसके अतिरिक्त, Bluefin <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> और एप्लिकेशन कंटेनर वर्कफ़्लो प्रदान करता है, जिससे किसी भी सॉफ़्टवेयर को चलाना आसान हो जाता है। चूँकि पूरी सॉफ़्टवेयर दुनिया कंटेनरों में आती है, उन्हें इस्तेमाल करना तेज़ और कुशल हो जाता है! <br><br><strong>Bluefin का विकास Bluefin पर ही होता है।</strong>",
+    "FlathubButton": "Flathub पर एप्स देखें"
+  },
+  "TryBluefin": {
+    "Tag": "आज़माएँ",
+    "Title": "Bluefin",
+    "LegacyDownloads": "पुराने Fedora आधारित संस्करण [अभी भी डाउनलोड के लिए उपलब्ध हैं](https://docs.projectbluefin.io/downloads/) लेकिन नए उपयोगकर्ताओं के लिए अनुशंसित नहीं हैं।",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ अल्फ़ा।",
+        "AlphaBadgeSub": "उचित सावधानी बरतें।",
+        "ComingSoonBadge": "जल्द आ रहा है",
+        "Dakota": "Dakota",
+        "DakotaDescription": "अंतिम रूप। Bluefin, पूर्ण।",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Server",
+        "ServerDescription": "दुनिया की प्रमुख FSDK सर्वर ऑपरेटिंग सिस्टम।"
+      }
+    }
+  },
+  "Community": {
+    "Tag": "हमारा",
+    "Title": "समुदाय",
+    "Documentation": {
+      "Title": "दस्तावेज़",
+      "Description": "सहायता चाहिए? इंस्टॉल, सामान्य उपयोग और समस्या-समाधान के लिए नवीनतम गाइड हेतु हमारी दस्तावेज़ साइट देखें।",
+      "Button": "दस्तावेज़ देखें",
+      "DiscordButton": "हमारे Discord से जुड़ें",
+      "DiscussionsButton": "चर्चाएँ"
+    },
+    "Contribute": {
+      "Tag": "हमारे योगदानकर्ता",
+      "Title": "योगदान करें",
+      "Description": "कोड योगदान करके, बग रिपोर्ट करके या फ़ीचर अनुरोधों के ज़रिए Bluefin के विकास में सहायता करें। यदि आप चाहें तो व्यक्तिगत योगदानकर्ताओं को आर्थिक सहायता भी दे सकते हैं।",
+      "Button": "हमारा GitHub देखें",
+      "DonateButton": "दान करें"
+    }
+  },
+  "News": {
+    "Title": "समाचार",
+    "Loading": "ब्लॉग पोस्ट लोड हो रही हैं...",
+    "NoPosts": "कोई ब्लॉग पोस्ट नहीं मिली।",
+    "ViewAll": "आधिकारिक ब्लॉग पर सभी पोस्ट देखें"
+  },
+  "Flock": {
+    "Title": "हमारा पक्ष",
+    "Description": "Bluefin एक समर्पित समूह द्वारा बनाया गया है, जिसमें रखरखावकर्ता और योगदानकर्ता शामिल हैं।",
+    "AlumniTitle": "इन कंपनियों से पूर्ववर्तियों के साथ",
+    "SponsorsTitle": "हमारे प्रायोजक",
+    "Attribution": "आँकड़े उपलब्ध कराने वाले"
+  },
+  "Footer": {
+    "PoweredBy": "द्वारा संचालित",
+    "Project": {
+      "Title": "Project Bluefin किसने बनाया",
+      "Ublue": "Linux डेस्कटॉप को पुनर्जाग्रित करने के लिए बनाया गया एक सामुदायिक टूलकिट। खेल के प्रति प्रेम से बनाया गया। स्वागत है indie Cloud Native की दुनिया में।"
+    },
+    "Credits": {
+      "Intro": "सारे कलाकार मनुष्यों द्वारा बनाए गए हैं।",
+      "Website": "वेबसाइट - [Jan Dolanský](https://dolansky.dev/) & [Kyle Gospodnetich](https://kylegospodneti.ch/)",
+      "Logos": "लोगो और वॉलपेपर - [Jacob Schnurr](https://www.etsy.com/shop/JSchnurrCommissions?listing_id=1425657775)",
+      "ImageEdit": "इमेज संपादन - [Delphic Melody](https://github.com/delphicmelody/)",
+      "Wallpapers": "Bluefin चित्रात्मक वॉलपेपर - Andy Frazer, [DragonsofWales](https://www.etsy.com/fi-en/shop/DragonsofWales?ref=profile_header)",
+      "Translations": "अनुवाद - [Tulip Blossom](https://github.com/tulilirockz), [karhima](https://github.com/karhima), [Niklas](https://niklas.tech), [Crono](https://github.com/EPOCHvoyager), [Tsu-gu](https://github.com/Tsu-gu) & [Mimolet](https://github.com/theMimolet)",
+      "Thanks": "विशेष धन्यवाद - [Aaron Lake](https://www.linkedin.com/in/aaron-lake/), [Brian Ketelsen](https://brian.dev/), [Dustin Kirkland](https://www.kotterva.com/), [Wayne Witzel](https://github.com/wwitzel3), & [Marco Ceppi](https://github.com/marcoceppi)"
+    },
+    "Copyright": "कॉपीराइट {date} © Project Bluefin और Universal Blue"
+  },
+  "Navbar": {
+    "ForYou": "आपके लिए",
+    "ForDevs": "डेवलपर के लिए",
+    "OurMission": "हमारा मिशन",
+    "TryOut": "आज़माएँ",
+    "Community": "समुदाय"
+  }
+}
