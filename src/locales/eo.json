@@ -1,6 +1,12 @@
 {
   "TopBar": {
-    "Reports": "Reports"
+    "Docs": "Dokumentado",
+    "Blog": "Blogo",
+    "Changelog": "Ŝanĝregistroj",
+    "Reports": "Raportoj",
+    "Discussions": "Diskutoj",
+    "Feedback": "Reagoj",
+    "Store": "Butiko (nur US)"
   },
   "Landing": {
     "Title": "La sekva generacio de Linuksa laborstacio, desegnita por fidindeco, rendimento kaj daŭripovo.",
@@ -10,42 +16,141 @@
   "Users": {
     "Tag": "Por",
     "Title": "Vi",
+    "Intro": "Bluefin estas operaciumo por via komputilo. La plej bona el ambaŭ mondoj: la fidindeco kaj la facileco de uzo de Chromebook, kun la potenco de GNOME-labortablo.",
     "Box1": "Aplikaĵoj per Flathub",
     "Box2": "Preskaŭ nula prizorgado",
-    "Box3": "Inkluzivitaj GPU peliloj"
+    "Box3": "Inkluzivitaj GPU-peliloj",
+    "Features": "Kun aŭtomatikaj bild-bazaj ĝisdatigoj kaj simpla grafika aplikaĵobutiko, Bluefin estas desegnita por fori de via vojo. Akiru tion, kion vi volas, sen oferzi la stabilon de la sistemo. La Linuksa kliento evoluis: pura komenco por la venonta generacio. Konsultu la [anonce-bloga afiŝo](https://www.ypsidanger.com/announcing-project-bluefin/) kaj la [enkonduka dokumentado](https://docs.projectbluefin.io) por pli da informoj.",
+    "BluefinArtworkAlt": "Bluefin rigardante la estonton de Linukso - ŝi ŝajnas troviĝi maldekstre"
+  },
+  "EvolutionQuote": {
+    "Quote": "Evoluo estas proceso de konstanta brancigo kaj ekspansiĝo.",
+    "Author": "Stephen Jay Gould",
+    "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
   },
   "Devs": {
     "Tag": "Por",
     "Title": "Programistoj",
+    "Features": "Bluefin venas kun opcia \"programista reĝimo\", kiu transformas vian aparaton en potencan laborstaton. Ĝi inkluzivas kontenercentrajn laborkfluojn, por helpi vin starti sendepende de via fono, aŭ alportu proprajn. En la mondo troviĝas [20 milionoj da nuba-nativaj programistoj](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/), kiuj senpere uzas tiujn [gvidantajn ilojn de la industrio](https://landscape.cncf.io/)...",
     "BoxOne": "Visual Studio Code kun devcontainers.",
     "BoxTwo": "Uja-centra terminalo",
     "BoxThree": "Devpod por programistaj medioj kiel kodo",
     "BoxFour": "Homebrew preta",
+    "BoxFive": "Podman Desktop por grafika mastrado de konteneroj",
+    "BoxSix": "JetBrains IDE-oj unu komando for",
+    "RuntimeContainers": "La inkluzigo de [kontenerfunkciaro](https://podman.io) malŝlostas la potencialon de via teamo. Uzu sur via labortablo la same ilojn, kiuj funkciigas la modernan retan infrastrukturon. Bluefin scias liveri al produkta medio.",
+    "CNJourney": "Ni celas Linuksajn operaciistojn, kiuj ne uzas Linukson sur la labortablo, ĉar ĝi malsukcesis ili. Do ni akompanas la Linuksan labortablon tra ĝia nuba-nativa vojaĝo kaj konstruas ĝin kune kun la komunumo.",
+    "KarlArtworkAlt": "Karl supervenanta super la Akumulitaĵon",
     "TowerJoke": "<b>Supreniru</b> vian Atendvicon!"
+  },
+  "InitiativeQuote": {
+    "Quote": "Estu tiu, kiu moviĝas, ne tiu, kiu estas movata.",
+    "Author": "Komandante Zavala (Destiny)",
+    "WikiLink": "https://en.wikipedia.org/wiki/Lance_Reddick"
   },
   "Mission": {
     "Tag": "Nia",
     "Title": "Misio",
+    "Text": {
+      "NewBreed": "Bluefin ne estas nur softvaro, ŝi estas nova specio de besto, adaptita por elteni la penadojn de ekosistemo regata de gigantoj, dum protektante sian familion.",
+      "Change": "Teknologio komenciĝas ĉe la loka komputilo, la aparato kiun vi tuŝas, kaj ĝi devus esti tiel esenca kiel la resto de la Linuksa ekosistemo.",
+      "CloudNative": "Per enkondukado de nuba-nativaj ŝablonoj en la labortablon ni esperas ekscigi intereson pri labortabla komputado, dum servante la venontan generacion de malfermitkodaj kontribuantoj. Bluefin estas desegnita esti la ilo sur kiu vi fidas por fari tion, kion vi faras plej bone. La respondo por ni estas simpla: uzu tion, kion uzas la ekspertoj pri infrastrukturo. La nuna Linuksa labortablo ne portis nin tien, sed ni kredas, ke kio estis farita, povas esti malfarita. Ni faru ĝin pli bona.",
+      "Sustainability": "Bluefin temas pri daŭripoveco, ampleksante la softvaron, la hardvaron kaj la homojn."
+    },
+    "CleverGirl": "Aŭ ŝi povas tranĉi nin kune laŭvoje. Saĝa knabino.",
     "BluefinChillAlt": "Bluefin kuŝanta kaj malstreĉiĝanta"
+  },
+  "SpreadQuote": {
+    "Quote": "Ekzistas du manieroj disaŭrigi lumon: esti la kandelo aŭ la spegulo, kiu reflektas ĝin.",
+    "Author": "Edith Wharton",
+    "WikiLink": "https://en.wikipedia.org/wiki/Edith_Wharton"
   },
   "Video": {
     "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
-    "Title": "Enkonduko al Bluefin Linux"
+    "Title": "Enkonduko al Bluefin Linux",
+    "Text": {
+      "Passion": "Projekto Bluefin ne estas finit produkto, ŝi estas daŭranta pasioprojekto, prizorgata de [entuziasmuloj de nuba nativido](https://github.com/ublue-os/bluefin/graphs/contributors), kiuj serĉas pli fidindan kaj pli prizorgeblan Linuksan labortablon. Rigardu la [malfermitajn problemojn](https://github.com/ublue-os/bluefin/issues).",
+      "StateOfTheArt": "Ŝi reprezentas la plej novan teknologion: belan kaj unikan creature. Perfektan predanton por mondo, kiu neevite alfrontos defiojn. Ni devas-adaptiĝi. Ni povas fari tion **kune**."
+    }
+  },
+  "Bazaar": {
+    "Tag": "Ruli vian favoritan",
+    "Title": "Aplikaĵoj",
+    "Description": "Bluefin uzas la aplikaĵobutikon <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a>, kiu ebligas facilan instaladon kaj mastraddon de ĉiuj viaj favorataj aplikaĵoj el <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> kaj el kuratita listo de aplikaĵoj, kiujn ni pensas ke vi amos.",
+    "Additional": "Krome, Bluefin provizas <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> kaj laborkfluojn por aplikaĵaj konteneroj, igante facila ruli iun ajn programon. Ĉar la tuta softvora mondo venas en konteneroj, uzi ilin fariĝas rapide kaj efike! <br><br><strong>Bluefin estas disvolvata sur Bluefin.</strong>",
+    "FlathubButton": "Vidi aplikaĵojn ĉe Flathub"
   },
   "TryBluefin": {
-    "Title": "Provu Bluefin"
+    "Tag": "Provu",
+    "Title": "Bluefin",
+    "LegacyDownloads": "La pli malnovaj Fedora-bazitaj versioj restas [disponeblaj por elŝuto](https://docs.projectbluefin.io/downloads/), sed ne estas rekomendataj por novaj uzantoj.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ Alfa.",
+        "AlphaBadgeSub": "Prenu taŭgajn antaŭzorgojn.",
+        "ComingSoonBadge": "Baldaŭ",
+        "Dakota": "Dakota",
+        "DakotaDescription": "La fina formo. Perfektigita Bluefin.",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Server",
+        "ServerDescription": "La unua FSDK-servila operaciumo en la mondo."
+      }
+    }
+  },
+  "Community": {
+    "Tag": "Nia",
+    "Title": "Komunumo",
+    "Documentation": {
+      "Title": "Dokumentado",
+      "Description": "Serĉas subtenon? Vidu nian dokumentadan retejon por aktualaj gvidiloj pri instalado, ĝenerala uzo kaj problemsolvo.",
+      "Button": "Vidi dokumentadon",
+      "DiscordButton": "Aliĝu nian Discord",
+      "DiscussionsButton": "Diskutoj"
+    },
+    "Contribute": {
+      "Tag": "Niaj kontribuantoj",
+      "Title": "Kontribui",
+      "Description": "Helpu evolvi Bluefin per kontribuo de kodo, raportado de eraroj aŭ petoj de novaj funkcioj. Vi ankaŭ povas subteni individajn kontribuantojn, se vi volas kontribui mone.",
+      "Button": "Vizitu nian GitHub",
+      "DonateButton": "Donaci"
+    }
+  },
+  "News": {
+    "Title": "Novaĵoj",
+    "Loading": "Ŝargante blogaĵojn...",
+    "NoPosts": "Neniu blogaĵo trovita.",
+    "ViewAll": "Vidi ĉiujn afiŝojn en la oficiala blago"
   },
   "Flock": {
     "Title": "Nia Flocko",
-    "Description": "Bluefin estas konstruita de dediĉita grupo de prizorgantoj kaj kontribuantoj."
+    "Description": "Bluefin estas konstruita de dediĉita grupo de prizorgantoj kaj kontribuantoj.",
+    "AlumniTitle": "Kun eksaj anoj de kompanioj kiel",
+    "SponsorsTitle": "Niaj subtenantoj",
+    "Attribution": "Statistikon provizas"
   },
   "Footer": {
+    "PoweredBy": "Funkciigita de",
+    "Project": {
+      "Title": "Projekto Bluefin estas konstruita per",
+      "Ublue": "Komuna ilaro desegnita por restartigi la Linuksan labortablon. Konstruita el pasiono por la ludo. Bonvenon al sendependa nuba nativido."
+    },
+    "Credits": {
+      "Intro": "Ciuj artaĵoj faritaj de homoj.",
+      "Website": "Retejo - [Jan Dolanský](https://dolansky.dev/) & [Kyle Gospodnetich](https://kylegospodneti.ch/)",
+      "Logos": "Emblemoj kaj fonoj - [Jacob Schnurr](https://www.etsy.com/shop/JSchnurrCommissions?listing_id=1425657775)",
+      "ImageEdit": "Redakto de bildoj - [Delphic Melody](https://github.com/delphicmelody/)",
+      "Wallpapers": "Ilustra Bluefin-fono - Andy Frazer, [DragonsofWales](https://www.etsy.com/fi-en/shop/DragonsofWales?ref=profile_header)",
+      "Translations": "Tradukoj - [Tulip Blossom](https://github.com/tulilirockz), [karhima](https://github.com/karhima), [Niklas](https://niklas.tech), [Crono](https://github.com/EPOCHvoyager), [Tsu-gu](https://github.com/Tsu-gu) & [Mimolet](https://github.com/theMimolet)",
+      "Thanks": "Specialan dankon - [Aaron Lake](https://www.linkedin.com/in/aaron-lake/), [Brian Ketelsen](https://brian.dev/), [Dustin Kirkland](https://www.kotterva.com/), [Wayne Witzel](https://github.com/wwitzel3), & [Marco Ceppi](https://github.com/marcoceppi)"
+    },
     "Copyright": "Kopirajto {date} © Projekto Bluefin kaj Universala Blua"
   },
   "Navbar": {
     "ForYou": "Por vi",
     "ForDevs": "Por programistoj",
     "OurMission": "Nia misio",
-    "TryOut": "Provu"
+    "TryOut": "Provu",
+    "Community": "Komunumo"
   }
 }
