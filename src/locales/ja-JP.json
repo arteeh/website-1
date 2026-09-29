@@ -1,6 +1,12 @@
 {
   "TopBar": {
-    "Reports": "Reports"
+    "Docs": "ドキュメント",
+    "Blog": "ブログ",
+    "Changelog": "変更履歴",
+    "Reports": "レポート",
+    "Discussions": "ディスカッション",
+    "Feedback": "フィードバック",
+    "Store": "ストア（米国限定）"
   },
   "Landing": {
     "Title": "信頼性、パフォーマンス、持続可能性のために設計された次世代 Linux ワークステーション。",
@@ -10,42 +16,141 @@
   "Users": {
     "Tag": "向け",
     "Title": "ユーザー",
+    "Intro": "Bluefin は、あなたのパソコンのためのオペレーティングシステムです。Chromebook の信頼性と使いやすさに、GNOME デスクトップの力を両立させました。",
     "Box1": "Flathub によるアプリケーション",
     "Box2": "ほぼメンテナンス不要",
-    "Box3": "GPU ドライバー同梱"
+    "Box3": "GPU ドライバー同梱",
+    "Features": "イメージベースの自動アップデートとシンプルなグラフィカルのアプリケーションストアを備えた Bluefin は、あなたの邪魔をしません。システムの安定性を犠牲にせず、欲しいものを手に入れられます。Linux クライアントは進化し、次世代に向けたクリーンなスタートとなりました。詳しくは[発表ブログ記事](https://www.ypsidanger.com/announcing-project-bluefin/)と[入門ドキュメント](https://docs.projectbluefin.io)をご覧ください。",
+    "BluefinArtworkAlt": "Linux の未来を見つめる Bluefin — どうやら左側にあります"
+  },
+  "EvolutionQuote": {
+    "Quote": "進化とは、絶えず枝分かれし、広がり続ける過程です。",
+    "Author": "Stephen Jay Gould",
+    "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
   },
   "Devs": {
     "Tag": "向け",
     "Title": "開発者",
+    "Features": "Bluefin には任意の「開発者モード」が用意されており、デバイスをパワフルなワークステーションに変えられます。出発点に応じてコンテナ中心のワークフローが用意されているほか、都合のよいものを自分で持ち込むこともできます。世界には[2,000 万人のクラウドネイティブな開発者](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/)がおり、これらの[業界をリードするツール](https://landscape.cncf.io/)を気軽に使いこなせます…",
     "BoxOne": "devcontainers を活用した Visual Studio Code",
-    "BoxTwo": "コンテナ中心のターミナル",
-    "BoxThree": "コードとしての開発環境を実現する Devpod",
-    "BoxFour": "Homebrew をすぐに利用可能",
+    "BoxTwo": "コンテナ中心のターミナルで、お気に入りの Linux ディストリビューションと作業できる",
+    "BoxThree": "Kubernetes を含む CNCF のベストツールを用いたクラウドネイティブ開発のために設計",
+    "BoxFour": "Homebrew が標準で使えるので、Mac と同じツールを",
+    "BoxFive": "Podman Desktop によるグラフィカルのコンテナ管理",
+    "BoxSix": "JetBrains IDE をコマンド一つで導入",
+    "RuntimeContainers": "[コンテナランタイム](https://podman.io)が含まれることで、チームの可能性が解き放たれます。現代のインターネットインフラを支えるツールを、デスクトップでそのまま使えます。Bluefin は本番環境への提供方法を知っています。",
+    "CNJourney": "私たちは、デスクトップでの Linux が期待を裏切ってきた。だから私たちは Linux デスクトップをクラウドネイティブの道筋へ進ませ、コミュニティとして構築していきます。 ",
+    "KarlArtworkAlt": "バックログを見下ろす Karl",
     "TowerJoke": "あなたのバックログを<b>Tower</b>（見下ろし）しましょう！"
+  },
+  "InitiativeQuote": {
+    "Quote": "動かされるのではなく、動かす側になれ。",
+    "Author": "Commander Zavala (Destiny)",
+    "WikiLink": "https://en.wikipedia.org/wiki/Lance_Reddick"
   },
   "Mission": {
     "Tag": "私たちの",
     "Title": "ミッション",
+    "Text": {
+      "NewBreed": "Bluefin は単なるソフトウェアではありません。彼女は、巨大な個体に支配されるエコシステムの過酷さの中で生き延びるために適応し、家族を守りながら生きる、新しい種の生き物なのです。",
+      "Change": "テクノロジーは手元のコンピューター、つまりあなたが触るデバイスから始まります。それは Linux エコシステムの他のすべてと同じくらい大切なものになるべきです。",
+      "CloudNative": "クラウドネイティブな考え方をデスクトップへ取り入れることで、私たちはデスクトップ環境への関心を再び灯し、次世代を担うオープンソース貢献者に寄り添えるよう努めています。Bluefin は、あなたが最も得意とすることのために頼りにできるツールとして設計されています。私たちにとって答えは単純です。インフラの専門家が使っているものを使いましょう。現在の Linux デスクトップはそこへ導いてくれません。しかし、作られたものは作り直せる性質がある。より良くしましょう。",
+      "Sustainability": "Bluefin は持続可能性についてのものです。ソフトウェア、ハードウェア、そして人をすべて含みます。"
+    },
+    "CleverGirl": "あるいは彼女は途中で私たちを引き裂くかもしれません。賢いこねこ。",
     "BluefinChillAlt": "くつろいで横たわる Bluefin"
+  },
+  "SpreadQuote": {
+    "Quote": "光を広げる方法は二つあります。灯そのものになるか、光を映す鏡になるか。",
+    "Author": "Edith Wharton",
+    "WikiLink": "https://en.wikipedia.org/wiki/Edith_Wharton"
   },
   "Video": {
     "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
-    "Title": "Bluefin Linux 紹介"
+    "Title": "Bluefin Linux 紹介",
+    "Text": {
+      "Passion": "Project Bluefin は完成した製品ではありません。より信頼性が高く、メンテナンスしやすい Linux デスクトップ体験を求める[クラウドネイティブの愛好者](https://github.com/ublue-os/bluefin/graphs/contributors)들이継続的に保守する情熱のプロジェクトです。[オープンな issue](https://github.com/ublue-os/bluefin/issues)も是非チェックしてください。",
+      "StateOfTheArt": "彼女は最高水準の技術力を体現しています。美しさと、唯一無二の存在感。いずれ直面することになる試練の世界に向けた、完璧な捕食者。適応しなければならない。**ともに**ならそれは可能になる。"
+    }
+  },
+  "Bazaar": {
+    "Tag": "お気に入りを使ってみる",
+    "Title": "アプリケーション",
+    "Description": "Bluefin は <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a> アプリストアを利用し、<a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> と、あなたが気に入るアプリの精选リストからお気に入りのアプリケーションを簡単にインストール・管理できます。",
+    "Additional": "さらに Bluefin は <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> とアプリケーションのコンテナワークフローを提供し、あらゆるソフトウェアの実行を容易にします。 <br><br><strong>Bluefin は Bluefin 上で開発されています。</strong>",
+    "FlathubButton": "Flathub のアプリを見る"
   },
   "TryBluefin": {
-    "Title": "Bluefin を試す"
+    "Tag": "試す",
+    "Title": "Bluefin を試す",
+    "LegacyDownloads": "古い Fedora ベースのバージョンは[引き続きダウンロードできます](https://docs.projectbluefin.io/downloads/)が、新しいユーザーには推奨されません。",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ アルファ版。",
+        "AlphaBadgeSub": "適切な予防措置を取ってください。",
+        "ComingSoonBadge": "近日公開",
+        "Dakota": "Dakota",
+        "DakotaDescription": "最終形態。完成された Bluefin。",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Server",
+        "ServerDescription": "世界有数の FSDK サーバーオペレーティングシステム。"
+      }
+    }
+  },
+  "Community": {
+    "Tag": "私たちの",
+    "Title": "コミュニティ",
+    "Documentation": {
+      "Title": "ドキュメント",
+      "Description": "サポートが必要ですか？インストール、一般的な使い方、トラブルシューティングについての最新のガイドをドキュメントサイトでご覧ください。",
+      "Button": "ドキュメントを見る",
+      "DiscordButton": "Discord に参加する",
+      "DiscussionsButton": "ディスカッション"
+    },
+    "Contribute": {
+      "Tag": "私たちの貢献者",
+      "Title": "貢献する",
+      "Description": "コードの提供、バグの報告、機能の要望を通じて Bluefin の開発に協力してください。金銭的な支援として、個々の貢献者をスポンサーすることもできます。",
+      "Button": "GitHub を見る",
+      "DonateButton": "寄付する"
+    }
+  },
+  "News": {
+    "Title": "ニュース",
+    "Loading": "ブログ記事を読み込んでいます…",
+    "NoPosts": "ブログ記事が見つかりませんでした。",
+    "ViewAll": "すべての記事を公式ブログで確認する"
   },
   "Flock": {
     "Title": "私たちの群れ",
-    "Description": "Bluefin は、献身的なメンテナーと貢献者のグループによって構築されています。"
+    "Description": "Bluefin は、献身的なメンテナーと貢献者のグループによって構築されています。",
+    "AlumniTitle": "次のような企業の出身者が参加しています:",
+    "SponsorsTitle": "スポンサー",
+    "Attribution": "提供された統計"
   },
   "Footer": {
+    "PoweredBy": "提供",
+    "Project": {
+      "Title": "Project Bluefin の構築に使用されたもの",
+      "Ublue": "Linux デスクトップを立て直すためのコミュニティツールキット。仕事への情熱から生まれました。インディーのクラウドネイティブへようこそ。"
+    },
+    "Credits": {
+      "Intro": "すべてのアートワークは人が作成しました。",
+      "Website": "Website - [Jan Dolanský](https://dolansky.dev/) & [Kyle Gospodnetich](https://kylegospodneti.ch/)",
+      "Logos": "Logos and Wallpapers - [Jacob Schnurr](https://www.etsy.com/shop/JSchnurrCommissions?listing_id=1425657775)",
+      "ImageEdit": "Image Editing - [Delphic Melody](https://github.com/delphicmelody/)",
+      "Wallpapers": "Bluefin Illustrative Wallpaper - Andy Frazer, [DragonsofWales](https://www.etsy.com/fi-en/shop/DragonsofWales?ref=profile_header)",
+      "Translations": "Translations - [Tulip Blossom](https://github.com/tulilirockz), [karhima](https://github.com/karhima), [Niklas](https://niklas.tech), [Crono](https://github.com/EPOCHvoyager), [Tsu-gu](https://github.com/Tsu-gu) & [Mimolet](https://github.com/theMimolet)",
+      "Thanks": "Special Thanks - [Aaron Lake](https://www.linkedin.com/in/aaron-lake/), [Brian Ketelsen](https://brian.dev/), [Dustin Kirkland](https://www.kotterva.com/), [Wayne Witzel](https://github.com/wwitzel3), & [Marco Ceppi](https://github.com/marcoceppi)"
+    },
     "Copyright": "Copyright {date} © Project Bluefin and Universal Blue"
   },
   "Navbar": {
     "ForYou": "あなたのために",
     "ForDevs": "開発者向け",
     "OurMission": "私たちのミッション",
-    "TryOut": "試してみる"
+    "TryOut": "試してみる",
+    "Community": "コミュニティ"
   }
 }
