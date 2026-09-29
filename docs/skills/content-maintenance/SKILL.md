@@ -70,18 +70,6 @@ reports a count:
 - **Orphaned keys are a hard failure.** A key a locale declares but `en-US`
   lacks can never render.
 
-An orphaned key is not always a mistake in the locale. Before deleting one, grep
-the components for it:
-
-```bash
-rg -n "TopBar.AskBluefin" src/
-```
-
-If a component reads the key, the source locale is the file that is wrong —
-add the key to `en-US.json` and every locale that already carries it becomes
-valid at once. Deleting it from each locale in turn would silence the test while
-leaving the nav item untranslated and falling back to the raw key string.
-
 Values that are proper names, brand names, URLs, and Vue interpolation tokens
 stay in the source form even in a complete translation: author attributions
 (`EvolutionQuote.Author`), `WikiLink` URLs, `Video.Url`, `TryBluefin.Title`, and
@@ -150,11 +138,6 @@ edit. Two non-obvious consequences:
   `SUPPORTED_LOCALES` and asserts exact equality on
   `Object.keys(i18n.global.messages).sort()`. A new locale file fails that
   test until the tag is added to the list, kept in sort order.
-- `npx vitest run src/tests/locale-completeness.test.ts` currently has four
-  recorded failures on `main` — `de-DE`, `fr-FR`, `ko-KR` and `pt-BR` each
-  declare `TopBar.AskBluefin`, which `en-US.json` does not. That is a
-  pre-existing baseline, not something a new locale caused; check the failing
-  filenames before believing you broke it.
 
 Verify a new locale's strings actually resolve through vue-i18n (not just that
 the JSON parses) with a throwaway probe that calls
@@ -192,10 +175,6 @@ individually before reporting.
 keys only warn (vue-i18n falls back to `en-US.json`), while **orphaned** keys —
 a key the locale declares that `en-US.json` does not — are a hard failure. A
 completion pass must therefore add the missing keys *and* delete the orphans.
-`TopBar.AskBluefin` is a live example: `TopNavbar.vue` calls
-`t('TopBar.AskBluefin')`, but the key was dropped from `en-US.json`, so it can
-never render and every locale still carrying it fails the suite. Remove it from
-the locale; do not re-add it to `en-US.json` from a translation task.
 
 Other rules a completion pass has to honour:
 
