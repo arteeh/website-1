@@ -4,7 +4,7 @@
     "AskBluefin": "Bluefin에게 문의",
     "Blog": "블로그",
     "Changelog": "변경 로그",
-    "Reports": "Reports",
+    "Reports": "시스템 리포트",
     "Discussions": "토론",
     "Feedback": "피드백",
     "Store": "스토어 (US 전용)"
@@ -15,8 +15,8 @@
     "TryOutButton": "체험하기"
   },
   "Users": {
-    "Tag": "For",
-    "Title": "You",
+    "Tag": "위한",
+    "Title": "당신",
     "Intro": "Bluefin은 컴퓨터를 위한 운영체제입니다. 두 세계의 장점을 모두 갖춘: 크롬북의 신뢰성과 사용 편의성, 그리고 GNOME 데스크톱의 강력함.",
     "Box1": "Flathub 애플리케이션",
     "Box2": "거의 무관리",
@@ -30,8 +30,8 @@
     "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
   },
   "Devs": {
-    "Tag": "For",
-    "Title": "Developers",
+    "Tag": "위한",
+    "Title": "개발자",
     "Features": "Bluefin은 장치를 강력한 워크스테이션으로 변환하는 선택적 \"개발자 모드\"를 제공합니다. 출발점에 따라 시작할 수 있는 컨테이너 중심 워크플로우를 제공하거나, 직접 가져올 수 있습니다. 전 세계에는 [1,560만 명의 클라우드 네이티브 개발자](https://www.cncf.io/announcements/2025/11/11/cncf-and-slashdata-survey-finds-cloud-native-ecosystem-surges-to-15-6m-developers/)가 있으며, 이러한 [업계 최고의 도구](https://landscape.cncf.io/)를 쉽게 활용할 수 있습니다.",
     "BoxOne": "devcontainer가 포함된 Visual Studio Code",
     "BoxTwo": "컨테이너 중심 터미널로 좋아하는 Linux 배포판과 작업",
@@ -83,7 +83,21 @@
   },
   "TryBluefin": {
     "Tag": "TRY",
-    "Title": "Bluefin"
+    "Title": "Bluefin",
+    "LegacyDownloads": "예전에 나온 Fedora 기반 버전은 [지금도 다운로드할 수 있지만](https://docs.projectbluefin.io/downloads/), 새로운 사용자라면 권장되지 않습니다.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ 알파.",
+        "AlphaBadgeSub": "필요한 주의 사항을 조치하세요.",
+        "ComingSoonBadge": "출시 예정",
+        "Dakota": "Dakota",
+        "DakotaDescription": "최종 형태. 완성된 Bluefin.",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin 서버",
+        "ServerDescription": "세계 최고 수준의 FSDK 서버 운영체제."
+      }
+    }
   },
   "Community": {
     "Tag": "우리의",
@@ -96,6 +110,7 @@
       "DiscussionsButton": "토론"
     },
     "Contribute": {
+      "Tag": "우리의 기여자",
       "Title": "기여",
       "Description": "코드 기여, 버그 신고 또는 기능 요청을 통해 Bluefin 개발을 지원하세요. 금전적으로 기여하고 싶다면 개별 기여자를 후원할 수도 있습니다.",
       "Button": "GitHub 방문",
@@ -112,7 +127,8 @@
     "Title": "우리 단체",
     "Description": "Bluefin은 헌신적인 메인테이너와 기여자 그룹에 의해 구축됩니다.",
     "AlumniTitle": "다음과 같은 회사 출신들이 참여",
-    "SponsorsTitle": "우리의 후원자"
+    "SponsorsTitle": "우리의 후원자",
+    "Attribution": "통계 제공:"
   },
   "Footer": {
     "PoweredBy": "제공",
@@ -129,7 +145,7 @@
       "Translations": "번역 - [Tulip Blossom](https://github.com/tulilirockz), [karhima](https://github.com/karhima), [Niklas](https://niklas.tech), [Crono](https://github.com/EPOCHvoyager), [Tsu-gu](https://github.com/Tsu-gu) & [Mimolet](https://github.com/theMimolet), [chhanz](https://github.com/chhanz)",
       "Thanks": "특별한 감사 - [Aaron Lake](https://www.linkedin.com/in/aaron-lake/), [Brian Ketelsen](https://brian.dev/), [Dustin Kirkland](https://www.kotterva.com/), [Wayne Witzel](https://github.com/wwitzel3), & [Marco Ceppi](https://github.com/marcoceppi)"
     },
-    "Copyright": "Copyright {date} © Project Bluefin and Universal Blue"
+    "Copyright": "저작권 {date} © Project Bluefin 및 Universal Blue"
   },
   "Navbar": {
     "ForYou": "당신을 위한",
