@@ -1,0 +1,156 @@
+{
+  "TopBar": {
+    "Docs": "Belgeler",
+    "Blog": "Blog",
+    "Changelog": "Değişiklik Kayıtları",
+    "Reports": "Raporlar",
+    "Discussions": "Tartışmalar",
+    "Feedback": "Geri Bildirim",
+    "Store": "Mağaza (Yalnızca ABD)"
+  },
+  "Landing": {
+    "Title": "Güvenilirlik, performans ve sürdürülebilirlik için tasarlanmış yeni nesil Linux iş istasyonu.",
+    "DiscoverButton": "Keşfet",
+    "TryOutButton": "Deneyin"
+  },
+  "Users": {
+    "Tag": "Şunlar için",
+    "Title": "Siz",
+    "Intro": "Bluefin, bilgisayarınız için bir işletim sistemidir. İki dünyanın en iyisi: Chromebook'un güvenilirliği ve kullanım kolaylığı, GNOME masaüstünün gücüyle bir arada.",
+    "Box1": "Flathub'dan uygulamalar",
+    "Box2": "Neredeyse sıfır bakım",
+    "Box3": "Dahil GPU sürücüleri",
+    "Features": "Otomatik, görüntü tabanlı güncellemeler ve basit bir grafik uygulama mağazası ile Bluefin, yolunuzdan çekilmek için tasarlanmıştır. Sistem kararlılığından ödün vermeden istediğinizi edinin. Linux istemcisi olgunlaştı; sonraki nesil için temiz bir başlangıç. Daha fazla bilgi için [duyuru blog yazısına](https://www.ypsidanger.com/announcing-project-bluefin/) ve [tanıtım belgelerine](https://docs.projectbluefin.io) bakın.",
+    "BluefinArtworkAlt": "Bluefin, Linux'un geleceğine bakıyor - görüşe göre solda"
+  },
+  "EvolutionQuote": {
+    "Quote": "Evrim, sürekli dallanma ve genişleme sürecidir.",
+    "Author": "Stephen Jay Gould",
+    "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
+  },
+  "Devs": {
+    "Tag": "Şunlar için",
+    "Title": "Geliştiriciler",
+    "Features": "Bluefin, cihazınızı güçlü bir iş istasyonuna dönüştüren isteğe bağlı bir \"geliştirici modu\" ile gelir. Nereden geldiğinize bağlı olarak başlangıç yapmanıza yardımcı olan kapsayıcı odaklı iş akışları sunar; ya da kendinizinkileri getirin. Dünyada [20 milyon bulut tabanlı geliştirici](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/) var; bu [sektör lideri araçları](https://landscape.cncf.io/) kolaylıkla kullanın...",
+    "BoxOne": "devcontainers ile Visual Studio Code",
+    "BoxTwo": "Kapsayıcı odaklı bir terminal ile favori Linux dağıtımlarınızla çalışın",
+    "BoxThree": "Kubernetes dahil CNCF'nin en iyi araçlarıyla bulut tabanlı geliştirme için tasarlandı",
+    "BoxFour": "Öntanımlı olarak Homebrew, Mac'inizdekiyle aynı araçlar",
+    "BoxFive": "Grafik kapsayıcı yönetimi için Podman Desktop",
+    "BoxSix": "JetBrains IDE'leri tek komut uzakta",
+    "RuntimeContainers": "Bir [kapsayıcı çalışma zamanının](https://podman.io) dahil edilmesi ekibinizin potansiyelini açığa çıkarır. Modern internet altyapısını besleyen araçları masaüstünüzde kullanın. Bluefin, üretime geçmeyi bilir.",
+    "CNJourney": "Biz, Linux'u masaüstünde kullanmayan, çünkü onun kendilerini hayal kırıklığına uğrattığı Linux operatörlerini hedefliyoruz. Bu yüzden Linux masaüstünü bulut tabanlı yolculuğuna sokuyor ve onu bir topluluk olarak inşa ediyoruz. ",
+    "KarlArtworkAlt": "Backlog'un üzerinde yükselen Karl",
+    "TowerJoke": "Backlog'unuzun üzerinde bir <b>Kule</b>!"
+  },
+  "InitiativeQuote": {
+    "Quote": "Hareket eden kişi olun, hareket ettirilen kişi değil.",
+    "Author": "Komutan Zavala (Destiny)",
+    "WikiLink": "https://en.wikipedia.org/wiki/Lance_Reddick"
+  },
+  "Mission": {
+    "Tag": "Bizim",
+    "Title": "Misyon",
+    "Text": {
+      "NewBreed": "Bluefin yalnızca bir yazılım değil; devlerle dolu bir ekosistemin zorluklarında hayatta kalmaya uyum sağlamış, ailesini koruyan yeni bir türdür.",
+      "Change": "Teknoloji, dokunduğunuz yerel bilgisayarla, yani cihazınızla başlar ve Linux ekosistemindeki diğer her şey kadar temel olmalıdır.",
+      "CloudNative": "Masaüstüne bulut tabanlı kalıpları getirerek masaüstü bilgi işlemine ilgiyi yeniden canlandırmayı ve açık kaynak katkıcıların sonraki nesline hitap etmeyi umuyoruz. Bluefin, en iyi yaptığınız işi yapmak için bağımlı olduğunuz araç olarak tasarlandı. Bizim için cevap basit: altyapı uzmanlarının kullandığını kullanın. Mevcut Linux masaüstü bizi oraya götürmedi, ama inandığımız şey şu: yapılan şey, yapılmamış hâle getirilebilir. Daha iyisini yapalım.",
+      "Sustainability": "Bluefin; yazılımı, donanımı ve insanları kapsayan sürdürülebilirlikle ilgilidir."
+    },
+    "CleverGirl": "Ya da yolda bizi kanlardan yere serer. Akıllı Kız.",
+    "BluefinChillAlt": "Bluefin uzanıyor ve dinleniyor"
+  },
+  "SpreadQuote": {
+    "Quote": "Işığı yaymanın iki yolu vardır: mum olmak ya da onu yansıtan ayna olmak.",
+    "Author": "Edith Wharton",
+    "WikiLink": "https://en.wikipedia.org/wiki/Edith_Wharton"
+  },
+  "Video": {
+    "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
+    "Title": "Bluefin Tanıtımı",
+    "Text": {
+      "Passion": "Project Bluefin bitmiş bir ürün değil; daha güvenilir ve sürdürülebilir bir Linux masaüstü deneyimi arayan [bulut tabanlı meraklılar](https://github.com/ublue-os/bluefin/graphs/contributors) tarafından sürdürülen devam eden bir tutku projesidir. [Açık sorunlara](https://github.com/ublue-os/bluefin/issues) göz atın.",
+      "StateOfTheArt": "O, en son teknolojiyi temsil eder: güzel ve eşsiz bir yaratık. Kaçınılmaz olarak zorluklarla yüzleşecek bir dünya için mükemmel bir avcı. Uyum sağlamamız gerekiyor. Bunu **birlikte** yapabiliriz."
+    }
+  },
+  "Bazaar": {
+    "Tag": "Favorilerinizi çalıştırın",
+    "Title": "Uygulamalar",
+    "Description": "Bluefin, <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a> uygulama mağazasını kullanır; bu da favori uygulamalarınızın tümünü <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> ile, ayrıca seveceğinizi düşündüğümüz seçilmiş bir uygulama listesinden kolayca kurmanızı ve yönetmenizi sağlar.",
+    "Additional": "Ayrıca Bluefin, <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> ve uygulama kapsayıcı iş akışlarını sunar; böylece herhangi bir yazılımı çalıştırmak çok kolaylaşır. Yazılım dünyasının tamamı kapsayıcılarla geldiği için, bunları kullanmak hızlı ve verimli hâle gelir! <br><br><strong>Bluefin, Bluefin üzerinde geliştirilmiştir.</strong>",
+    "FlathubButton": "Uygulamaları Flathub'da görüntüleyin"
+  },
+  "TryBluefin": {
+    "Tag": "Deneyin",
+    "Title": "Bluefin",
+    "LegacyDownloads": "Eski, Fedora tabanlı sürümler [hâlâ indirilebilir](https://docs.projectbluefin.io/downloads/) ancak yeni kullanıcılar için önerilmez.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ Alfa.",
+        "AlphaBadgeSub": "Uygun önlemleri alın.",
+        "ComingSoonBadge": "Yakında",
+        "Dakota": "Dakota",
+        "DakotaDescription": "Nihai Form. Kusursuzlaştırılmış Bluefin.",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Sunucu",
+        "ServerDescription": "Dünyanın önde gelen FSDK sunucu işletim sistemi."
+      }
+    }
+  },
+  "Community": {
+    "Tag": "Bizim",
+    "Title": "Topluluk",
+    "Documentation": {
+      "Title": "Belgeler",
+      "Description": "Destek mi arıyorsunuz? Kurulum, genel kullanım ve sorun giderme hakkında güncel kılavuzlar için belgeler sitemize göz atın.",
+      "Button": "Belgeleri Görüntüle",
+      "DiscordButton": "Discord'umuza Katılın",
+      "DiscussionsButton": "Tartışmalar"
+    },
+    "Contribute": {
+      "Tag": "Katkıcılarımız",
+      "Title": "Katkıda Bulunun",
+      "Description": "Kod katkısı yaparak, hata bildirerek veya özellik istekleri oluşturarak Bluefin'in geliştirilmesine yardımcı olun. Katkıda bulunmak istiyorsanız ve parasal destek vermek isterseniz bireysel katkıcılara da sponsor olabilirsiniz.",
+      "Button": "GitHub'ımızı Ziyaret Edin",
+      "DonateButton": "Bağış Yapın"
+    }
+  },
+  "News": {
+    "Title": "Haberler",
+    "Loading": "Blog yazıları yükleniyor...",
+    "NoPosts": "Blog yazısı bulunamadı.",
+    "ViewAll": "Tüm yazıları resmî blogda görüntüleyin"
+  },
+  "Flock": {
+    "Title": "Sürümüz",
+    "Description": "Bluefin, kendini adamış bir bakımcılar ve katkıcılar grubu tarafından geliştirilir.",
+    "AlumniTitle": "Şu şirketlerden eski katkıcılar içerir",
+    "SponsorsTitle": "Sponsorlarımız",
+    "Attribution": "İstatistikler tarafından sağlanmıştır"
+  },
+  "Footer": {
+    "PoweredBy": "Altyapı Sağlayıcı",
+    "Project": {
+      "Title": "Project Bluefin Şunlarla Geliştirildi",
+      "Ublue": "Linux masaüstünü yeniden canlandırmak için tasarlanmış bir topluluk araç seti. Oyun sevgisiyle geliştirildi. Bağımsız Bulut Tabanlı Dünyaya Hoş Geldiniz."
+    },
+    "Credits": {
+      "Intro": "Tüm görseller insanlar tarafından yapıldı.",
+      "Website": "Web sitesi - [Jan Dolanský](https://dolansky.dev/) & [Kyle Gospodnetich](https://kylegospodneti.ch/)",
+      "Logos": "Logolar ve duvar kağıtları - [Jacob Schnurr](https://www.etsy.com/shop/JSchnurrCommissions?listing_id=1425657775)",
+      "ImageEdit": "Görsel düzenleme - [Delphic Melody](https://github.com/delphicmelody/)",
+      "Wallpapers": "Bluefin illüstratif duvar kağıdı - Andy Frazer, [DragonsofWales](https://www.etsy.com/fi-en/shop/DragonsofWales?ref=profile_header)",
+      "Translations": "Çeviriler - [Tulip Blossom](https://github.com/tulilirockz), [karhima](https://github.com/karhima), [Niklas](https://niklas.tech), [Crono](https://github.com/EPOCHvoyager), [Tsu-gu](https://github.com/Tsu-gu) & [Mimolet](https://github.com/theMimolet)",
+      "Thanks": "Özel Teşekkürler - [Aaron Lake](https://www.linkedin.com/in/aaron-lake/), [Brian Ketelsen](https://brian.dev/), [Dustin Kirkland](https://www.kotterva.com/), [Wayne Witzel](https://github.com/wwitzel3), & [Marco Ceppi](https://github.com/marcoceppi)"
+    },
+    "Copyright": "Telif Hakkı {date} © Project Bluefin ve Universal Blue"
+  },
+  "Navbar": {
+    "ForYou": "Sizin İçin",
+    "ForDevs": "Geliştiriciler İçin",
+    "OurMission": "Misyonumuz",
+    "TryOut": "Deneyin",
+    "Community": "Topluluk"
+  }
+}

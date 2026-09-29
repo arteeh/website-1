@@ -14,6 +14,7 @@ const SUPPORTED_LOCALES = [
   'pt-BR',
   'ru-RU',
   'sk-SK',
+  'tr',
   'vi-VN',
   'zh-HK',
   'zh-TW',
