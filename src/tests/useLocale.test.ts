@@ -13,6 +13,7 @@ const SUPPORTED_LOCALES = [
   'ja-JP',
   'ko-KR',
   'nl-NL',
+  'pl',
   'pt-BR',
   'ru-RU',
   'sk-SK',
