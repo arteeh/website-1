@@ -1,0 +1,156 @@
+{
+  "TopBar": {
+    "Docs": "التوثيق",
+    "Blog": "المدونة",
+    "Changelog": "سجلات التغييرات",
+    "Reports": "التقارير",
+    "Discussions": "النقاشات",
+    "Feedback": "الملاحظات",
+    "Store": "المتجر (الولايات المتحدة فقط)"
+  },
+  "Landing": {
+    "Title": "محطة عمل لينكس من الجيل التالي، مصمَّمة للموثوقية والأداء والاستدامة.",
+    "DiscoverButton": "اكتشف",
+    "TryOutButton": "جرّبه"
+  },
+  "Users": {
+    "Tag": "موجّه لـ",
+    "Title": "أنت",
+    "Intro": "بلوفين نظام تشغيل لجهازك. أفضل عالمين: موثوقية وسهولة استخدام Chromebook، مع قوة سطح مكتب GNOME.",
+    "Box1": "تطبيقات من Flathub",
+    "Box2": "صيانة تكاد تكون معدومة",
+    "Box3": "تعريفات معالجات الرسوميات مُضمَّنة",
+    "Features": "مع تحديثات آلية قائمة على الصور ومتجر تطبيقات بسيط, صُمِّم بلوفين لينحاز عن طريقك. احصل على ما تريد دون التضحية باستقرار النظام. تطوّر عميل لينكس، لتبدأ من جديد مع الجيل التالي. اطّلع على [منشور إعلان الإطلاق](https://www.ypsidanger.com/announcing-project-bluefin/) و[وثائق التعريف](https://docs.projectbluefin.io) لمزيد من المعلومات.",
+    "BluefinArtworkAlt": "بلوفين ينظر إلى مستقبل لينكس - يبدو أنه على اليسار"
+  },
+  "EvolutionQuote": {
+    "Quote": "التطوّر عملية تفريع وتوسّع مستمرّان.",
+    "Author": "ستيفن جاي غولد",
+    "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
+  },
+  "Devs": {
+    "Tag": "موجّه لـ",
+    "Title": "المطوّرين",
+    "Features": "يأتي بلوفين مع \"وضع المطوّر\" اختياري يحوّل جهازك إلى محطة عمل قوية. يتميّز بسير عمل قائم على الحاويات لتبدأ بسرعة مهما كانت نقطة انطلاقك، أو استخدم أدواتك الخاصة. يوجد في العالم [20 مليون مطوّر أصيل سحابيًا](https://www.cncf.io/announcements/2026/03/24/cncf-and-slashdata-report-finds-cloud-native-community-reaches-nearly-20-million-developers/)، فاستخدم بسهولة [هذه الأدوات الرائدة في المجال](https://landscape.cncf.io/)...",
+    "BoxOne": "Visual Studio Code مع حاويات التطوير",
+    "BoxTwo": "اعمل مع توزيعات لينكس المفضّلة لديك عبر طرفية تركز على الحاويات",
+    "BoxThree": "مصمَّم لتطوير سحابي أصيل مع أفضل أدوات CNCF، بما في ذلك Kubernetes",
+    "BoxFour": "Homebrew مُفعَّل افتراضيًا، بنفس أدوات الـ Mac",
+    "BoxFive": "Podman Desktop لإدارة الحاويات بيانيًا",
+    "BoxSix": "بيئة تطوير JetBrains على بُعد أمر واحد",
+    "RuntimeContainers": "إدراج [بيئة تشغيل الحاويات](https://podman.io) يفتح إمكانات فريقك. استخدم على سطح مكتبك الأدوات نفسها التي تُشغّل بنية الإنترنت الحديثة. بلوفين يعرف كيف يُشحن إلى الإنتاج.",
+    "CNJourney": "نستهدف مشغّلي لينكس الذين لا يستخدمون لينكس على سطح المكتب لأنه خذلهم. لذلك نأخذ سطح مكتب لينكس في رحلته السحابية الأصلية ونبنيه كمجتمع. ",
+    "KarlArtworkAlt": "كارل يعلو فوق قائمة الأعمال المتأخرة",
+    "TowerJoke": "<b>برج</b> فوق قائمة أعمالك المتأخرة!"
+  },
+  "InitiativeQuote": {
+    "Quote": "كن الذي يحرّك، لا الذي يُحرَّك.",
+    "Author": "القائد زافالا (Destiny)",
+    "WikiLink": "https://en.wikipedia.org/wiki/Lance_Reddick"
+  },
+  "Mission": {
+    "Tag": "مهمّتنا",
+    "Title": "المهمة",
+    "Text": {
+      "NewBreed": "بلوفين ليس مجرّد برمجيات، بل هو سلالة جديدة من الكائنات، مُهيَّأة للنجاة في بيئة يهيمن عليها عمالقة، مع حماية عائلتها.",
+      "Change": "تبدأ التقنية بالحاسوب المحلي، الجهاز الذي تلمسه، وينبغي أن يكون بقدر أهمية بقية منظومة لينكس.",
+      "CloudNative": "بإدخال الأنماط السحابية الأصلية إلى سطح المكتب، نأمل في إشعال الاهتمام بالحوسبة المكتبية مع تلبية الجيل القادم من المساهمين في المصادر المفتوحة. صُمِّم بلوفين ليكون الأداة التي تعتمد عليها لتفعل ما تجيده. الجواب عندنا بسيط: استخدم ما يستخدمه خبراء البنية التحتية. سطح مكتب لينكس الحالي لم يوصلنا إلى هناك، لكننا نؤمن بأن ما صُنع يمكن أن يُعاد صنعه. فلنصنعه أفضل.",
+      "Sustainability": "بلوفين مسألة استدامة، تشمل البرمجيات والأجهزة والبشر."
+    },
+    "CleverGirl": "أو أنها قد تفتّحنا بطوننا في الطريق. فتاة ذكية.",
+    "BluefinChillAlt": "بلوفين مستلقية تسترخي"
+  },
+  "SpreadQuote": {
+    "Quote": "هناك طريقتان لنشر الضوء: أن تكون الشمعة، أو المرآة التي تعكسه.",
+    "Author": "إيديث وارتون",
+    "WikiLink": "https://en.wikipedia.org/wiki/Edith_Wharton"
+  },
+  "Video": {
+    "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
+    "Title": "مقدّمة عن بلوفين",
+    "Text": {
+      "Passion": "مشروع بلوفين ليس منتجًا مكتملًا، بل مشروع شغف مستمرّ يشرف عليه [هواة السحابة الأصلية](https://github.com/ublue-os/bluefin/graphs/contributors) الذين يسعون إلى تجربة سطح مكتب لينكس أكثر موثوقية وقابلية للصيانة. اطّلع على [المشكلات المفتوحة](https://github.com/ublue-os/bluefin/issues).",
+      "StateOfTheArt": "هي تجسّد أحدث ما توصلت إليه التقنية: مخلوق جميل وفريد. مفترس مثالي لعالم سيواجه تحدّيات حتماً. يجب أن نتكيّف. يمكننا فعل ذلك **معًا**."
+    }
+  },
+  "Bazaar": {
+    "Tag": "شغّل مفضّلاتك",
+    "Title": "التطبيقات",
+    "Description": "يستخدم بلوفين متجر التطبيقات <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a>، ما يتيح لك تثبيت جميع تطبيقاتك المفضّلة وإدارتها بسهولة من <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> ومن قائمة مختارة من التطبيقات نعتقد أنك ستعجبك.",
+    "Additional": "بالإضافة إلى ذلك، يوفّر بلوفين <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> وسير عمل لتطبيقات الحاويات، مما يجعل تشغيل أي برنامج أمرًا بسيطًا. بما أن عالم البرمجيات بأكمله يأتي في حاويات، فإن استخدامها يصبح سريعًا وفعّالًا! <br><br><strong>يُطوَّر بلوفين على بلوفين.</strong>",
+    "FlathubButton": "استعرض التطبيقات على Flathub"
+  },
+  "TryBluefin": {
+    "Tag": "جرّب",
+    "Title": "بلوفين",
+    "LegacyDownloads": "الإصدارات الأقدم المبنية على فيدورا [ما زالت متاحة للتنزيل](https://docs.projectbluefin.io/downloads/) لكنها غير موصى بها للمستخدمين الجدد.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ ألفا.",
+        "AlphaBadgeSub": "اتّخذ احتياطات مناسبة.",
+        "ComingSoonBadge": "قريبًا",
+        "Dakota": "داكوتا",
+        "DakotaDescription": "الشكل النهائي. بلوفين في كمالها.",
+        "Utah": "يوتا",
+        "UtahDescription": "",
+        "Server": "خادم بلوفين",
+        "ServerDescription": "نظام تشغيل خوادم FSDK الأول عالميًا."
+      }
+    }
+  },
+  "Community": {
+    "Tag": "مجتمعنا",
+    "Title": "المجتمع",
+    "Documentation": {
+      "Title": "التوثيق",
+      "Description": "تبحث عن الدعم؟ اطّلع على موقع التوثيق لدينا للحصول على أدلة محدّثة حول التثبيت والاستخدام العام واستكشاف الأخطاء وإصلاحها.",
+      "Button": "استعرض التوثيق",
+      "DiscordButton": "انضم إلى خادمنا على Discord",
+      "DiscussionsButton": "النقاشات"
+    },
+    "Contribute": {
+      "Tag": "مساهمونا",
+      "Title": "شارِك",
+      "Description": "ساعد في تطوير بلوفين عبر المساهمة بالشيفرة أو الإبلاغ عن الأخطاء أو اقتراح ميزات جديدة. يمكنك أيضًا رعاية مساهمين أفراديين إن رغبت في المساهمة ماليًا.",
+      "Button": "زر GitHub الخاص بنا",
+      "DonateButton": "تبرّع"
+    }
+  },
+  "News": {
+    "Title": "الأخبار",
+    "Loading": "جارٍ تحميل مقالات المدونة...",
+    "NoPosts": "لم يُعثر على مقالات في المدونة.",
+    "ViewAll": "استعرض كل المقالات على المدونة الرسمية"
+  },
+  "Flock": {
+    "Title": "قطيعنا",
+    "Description": "يُبنى بلوفين على يد مجموعة مخصّصة من المشرفين والمساهمين.",
+    "AlumniTitle": "بمشاركة منسّبين من شركات مثل",
+    "SponsorsTitle": "راعينا",
+    "Attribution": "الإحصاءات مقدَّمة من"
+  },
+  "Footer": {
+    "PoweredBy": "مدعوم بواسطة",
+    "Project": {
+      "Title": "بُني مشروع بلوفين باستخدام",
+      "Ublue": "مجموعة أدوات مجتمعية مصمَّمة لإعادة إحياء سطح مكتب لينكس. صُنعت حبًّا لهذه المهنة. أهلًا بك في السحابة الأصلية المستقلة."
+    },
+    "Credits": {
+      "Intro": "جميع الرسومات من صنع البشر.",
+      "Website": "الموقع الإلكتروني - [يان دولانسكي](https://dolansky.dev/) و[كايل غوسبودنيتش](https://kylegospodneti.ch/)",
+      "Logos": "الشعارات وخلفيات الشاشة - [جاكوب شنور](https://www.etsy.com/shop/JSchnurrCommissions?listing_id=1425657775)",
+      "ImageEdit": "تحرير الصور - [Delphic Melody](https://github.com/delphicmelody/)",
+      "Wallpapers": "خلفية بلوفين التوضيحية - أندي فريزر، [DragonsofWales](https://www.etsy.com/fi-en/shop/DragonsofWales?ref=profile_header)",
+      "Translations": "الترجمات - [Tulip Blossom](https://github.com/tulilirockz)، [karhima](https://github.com/karhima)، [Niklas](https://niklas.tech)، [Crono](https://github.com/EPOCHvoyager)، [Tsu-gu](https://github.com/Tsu-gu) و[Mimolet](https://github.com/theMimolet)",
+      "Thanks": "شكر خاص - [آرون ليك](https://www.linkedin.com/in/aaron-lake/)، [براين كيتيلسن](https://brian.dev/)، [داستن كيركلاند](https://www.kotterva.com/)، [وين ويتسل](https://github.com/wwitzel3)، و[ماركو سيبي](https://github.com/marcoceppi)"
+    },
+    "Copyright": "حقوق النشر {date} © مشروع بلوفين و Universal Blue"
+  },
+  "Navbar": {
+    "ForYou": "لك",
+    "ForDevs": "للمطوّرين",
+    "OurMission": "مهمّتنا",
+    "TryOut": "جرّبه",
+    "Community": "المجتمع"
+  }
+}

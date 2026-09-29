@@ -4,6 +4,7 @@ import { i18n } from '../locales/schema'
 
 const DEFAULT_LOCALE = 'en-US'
 const SUPPORTED_LOCALES = [
+  'ar',
   'de-DE',
   'en-US',
   'eo',
