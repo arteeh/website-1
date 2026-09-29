@@ -1,0 +1,156 @@
+{
+  "TopBar": {
+    "Docs": "文档",
+    "Blog": "博客",
+    "Changelog": "更新日志",
+    "Reports": "报告",
+    "Discussions": "讨论",
+    "Feedback": "反馈",
+    "Store": "商店（仅美国）"
+  },
+  "Landing": {
+    "Title": "新一代 Linux 工作站，专为可靠、高性能与可持续而设计。",
+    "DiscoverButton": "了解更多",
+    "TryOutButton": "立即试用"
+  },
+  "Users": {
+    "Tag": "为",
+    "Title": "你",
+    "Intro": "Bluefin 是专为你的电脑打造的操作系统，兼得两世界之长：拥有 Chromebook 的可靠与易用，以及 GNOME 桌面的强大性能。",
+    "Box1": "Flathub 应用",
+    "Box2": "近乎零维护",
+    "Box3": "内置 GPU 驱动",
+    "Features": "Bluefin 内置基于镜像的自动更新与简易的图形化应用商店，设计上让你畅行无阻。在不牺牲系统稳定性的前提下实现你想要的。Linux 客户端已蜕变，为下一代展开全新篇章。参阅[公布文章](https://www.ypsidanger.com/announcing-project-bluefin/)与[入门文档](https://docs.projectbluefin.io)了解更多。",
+    "BluefinArtworkAlt": "Bluefin 望向 Linux 的未来——据说在左边"
+  },
+  "EvolutionQuote": {
+    "Quote": "进化是一个不断分枝与扩充的过程。",
+    "Author": "斯蒂芬·盖尔",
+    "WikiLink": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould"
+  },
+  "Devs": {
+    "Tag": "为",
+    "Title": "开发者",
+    "Features": "Bluefin 提供可选的「开发者模式」，将你的装置转换为强大的工作站。它以容器为核心的工作流程，让你依来源不同轻松上手，也可以沿用自己的流程。世界有 2000 万云端原生开发者，你可以轻松使用这些[领先行业的工具](https://landscape.cncf.io/)……",
+    "BoxOne": "配备 devcontainers 的 Visual Studio Code",
+    "BoxTwo": "以容器为核心的终端，与你喜欢的 Linux 发行版一起使用",
+    "BoxThree": "为云端原生开发而设计，采用 CNCF 最佳工具，包括 Kubernetes",
+    "BoxFour": "预设即随附 Homebrew，与你 Mac 相同的工具",
+    "BoxFive": "Podman Desktop，用于图形化容器管理",
+    "BoxSix": "JetBrains IDE，一指令即可访问",
+    "RuntimeContainers": "内置[容器运行时](https://podman.io)释放你团队的潜能。在你的桌面上使用驱动现代网络基础设施的相同工具。Bluefin 懂得如何产出到生产环境。",
+    "CNJourney": "我们锁定那些因为桌面 Linux 未能满足他们而选择别人的开发者。因此我们将 Linux 桌面带入云端原生之旅，并以社群方式构建它。",
+    "KarlArtworkAlt": "Karl 高耸于 Backlog 之上",
+    "TowerJoke": "<b>Tower</b> over your Backlog!"
+  },
+  "InitiativeQuote": {
+    "Quote": "做那个推动者，而非被推动者。",
+    "Author": "泽瓦拉指挥官（Destiny）",
+    "WikiLink": "https://en.wikipedia.org/wiki/Lance_Reddick"
+  },
+  "Mission": {
+    "Tag": "我们的",
+    "Title": "使命",
+    "Text": {
+      "NewBreed": "Bluefin 不仅是软件，更是一种全新的物种，能在巨人主导的生态系中适应、生存，同时保护自己的家人。",
+      "Change": "技术从个人电脑开始，也就是你会触控的装置，它应该像 Linux 其余生态系一样重要。",
+      "CloudNative": "我们将云端原生模式引入桌面，希望借此点燃大家对桌面计算的兴趣，同时满足下一代开源贡献者的需求。Bluefin 设计成你可以依赖的工具，让你发挥所长。对我们的答案很简单：使用基础架构专家所使用的工具。现行的 Linux 桌面没把我们带到那里，但我们相信，既成之物，皆可推翻。让我们把它做得更好。",
+      "Sustainability": "Bluefin 关于可持续，涵盖软件、硬件与人员。"
+    },
+    "CleverGirl": "否则她可能会在半路把我们开膛破肚啦，聪明的女孩。",
+    "BluefinChillAlt": "Bluefin 躺着悠闲地休息"
+  },
+  "SpreadQuote": {
+    "Quote": "散发光有两种方式：做一支蜡烛，或做一面反射它的镜子。",
+    "Author": "伊迪丝·华顿",
+    "WikiLink": "https://en.wikipedia.org/wiki/Edith_Wharton"
+  },
+  "Video": {
+    "Url": "https://www.youtube.com/embed/Nz-yyDwTfRM&autoplay=1",
+    "Title": "Bluefin 简介",
+    "Text": {
+      "Passion": "Project Bluefin 并非完成品，而是一个持续进行的激情项目，由追求更可靠、更易维护的 Linux 桌面体验的[云端原生发烧友](https://github.com/ublue-os/bluefin/graphs/contributors)共同维护。看看这些[尚未解决的问题](https://github.com/ublue-os/bluefin/issues)。",
+      "StateOfTheArt": "她代表着尖端科技——一个美丽而独特的生物。为一个必然面临挑战的世界，打造的完美掠食者。我们必须适应。我们可以**一起**完成。"
+    }
+  },
+  "Bazaar": {
+    "Tag": "运行你喜欢的",
+    "Title": "应用",
+    "Description": "Bluefin 采用 <a href=\"https://usebazaar.org\" target=\"_blank\">Bazaar</a> 应用商店，让你轻松安装及管理来自 <a href=\"https://flathub.org\" target=\"_blank\">Flathub</a> 以及我们精选、你会喜欢的各种应用。",
+    "Additional": "此外，Bluefin 提供 <a href=\"https://docs.brew.sh/Homebrew-on-Linux\" target=\"_blank\">Homebrew</a> 与应用容器工作流程，让运行任何软件都轻松自如。由于整个软件世界都以容器包装，使用它们变得又快又高效！<br><br><strong>Bluefin 使用 Bluefin 开发。</strong>",
+    "FlathubButton": "在 Flathub 上查看应用"
+  },
+  "TryBluefin": {
+    "Tag": "试用",
+    "Title": "Bluefin",
+    "LegacyDownloads": "较旧的 Fedora 版本[仍可下载](https://docs.projectbluefin.io/downloads/)，但不建议新用户使用。",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ Alpha.",
+        "AlphaBadgeSub": "请做好适当防护。",
+        "ComingSoonBadge": "即将推出",
+        "Dakota": "Dakota",
+        "DakotaDescription": "最终形态。完美打造的 Bluefin。",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin 服务器",
+        "ServerDescription": "全球首屈一指的 FSDK 服务器操作系统。"
+      }
+    }
+  },
+  "Community": {
+    "Tag": "我们的",
+    "Title": "社区",
+    "Documentation": {
+      "Title": "文档",
+      "Description": "需要支持？参阅我们的文档网站，获取关于安装、一般使用与疑难排解的最新指南。",
+      "Button": "查看文档",
+      "DiscordButton": "加入我们的 Discord",
+      "DiscussionsButton": "讨论"
+    },
+    "Contribute": {
+      "Tag": "我们的贡献者",
+      "Title": "贡献",
+      "Description": "通过贡献代码、回报问题或提出功能请求来协助 Bluefin 开发。如果你愿意，也可以赞助个别贡献者。",
+      "Button": "浏览我们的 GitHub",
+      "DonateButton": "赞助"
+    }
+  },
+  "News": {
+    "Title": "最新消息",
+    "Loading": "正在载入博客文章……",
+    "NoPosts": "找不到博客文章。",
+    "ViewAll": "在官方博客查看所有文章"
+  },
+  "Flock": {
+    "Title": "我们的 flock",
+    "Description": "Bluefin 由一群尽责的维护者与贡献者共同打造。",
+    "AlumniTitle": "涵盖来自以下公司的校友：",
+    "SponsorsTitle": "我们的赞助者",
+    "Attribution": "统计数据由提供"
+  },
+  "Footer": {
+    "PoweredBy": "提供",
+    "Project": {
+      "Title": "Project Bluefin 使用以下构建",
+      "Ublue": "一个旨在重启 Linux 桌面的社群工具包。为对游戏的热爱而建。欢迎来到独立的云端原生。"
+    },
+    "Credits": {
+      "Intro": "所有艺术作品均由人类创作。",
+      "Website": "网站 - [Jan Dolanský](https://dolansky.dev/)、[Kyle Gospodnetich](https://kylegospodneti.ch/)",
+      "Logos": "标志及背景 - [Jacob Schnurr](https://www.etsy.com/shop/JSchnurrCommissions?listing_id=1425657775)",
+      "ImageEdit": "相片编辑 - [Delphic Melody](https://github.com/delphicmelody/)",
+      "Wallpapers": "Bluefin 插图壁纸 - Andy Frazer、[DragonsofWales](https://www.etsy.com/fi-en/shop/DragonsofWales?ref=profile_header)",
+      "Translations": "翻译 - [Tulip Blossom](https://github.com/tulilirockz)、[karhima](https://github.com/karhima)、[Niklas](https://niklas.tech)、[Crono](https://github.com/EPOCHvoyager)、[Tsu-gu](https://github.com/Tsu-gu) 及 [Mimolet](https://github.com/theMimolet)",
+      "Thanks": "特别感谢 - [Aaron Lake](https://www.linkedin.com/in/aaron-lake/)、[Brian Ketelsen](https://brian.dev/)、[Dustin Kirkland](https://www.kotterva.com/)、[Wayne Witzel](https://github.com/wwitzel3) 及 [Marco Ceppi](https://github.com/marcoceppi)"
+    },
+    "Copyright": "版权所有 {date} © Project Bluefin 及 Universal Blue"
+  },
+  "Navbar": {
+    "ForYou": "为你",
+    "ForDevs": "为开发者",
+    "OurMission": "我们的使命",
+    "TryOut": "试用",
+    "Community": "社区"
+  }
+}

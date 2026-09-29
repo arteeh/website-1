@@ -16,6 +16,7 @@ const SUPPORTED_LOCALES = [
   'sk-SK',
   'vi-VN',
   'zh-HK',
+  'zh-Hans',
   'zh-TW',
 ]
 

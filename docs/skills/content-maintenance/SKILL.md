@@ -29,6 +29,20 @@ prominence, or Wolves runtime engineering.
 Use `import.meta.env.BASE_URL` for public runtime asset paths. Never hand-edit a
 generated file.
 
+### Adding a new locale
+
+Adding a locale is a content change to `src/locales/<tag>.json`, but it has one
+non-obvious test coupling. `src/tests/useLocale.test.ts` asserts an exact list
+(`SUPPORTED_LOCALES`) of the locales `i18n.global.messages` contains, and the
+locales are bundled eagerly via `import.meta.glob('./*.json')`. Dropping a new
+`<tag>.json` into the directory therefore adds a key to that map and makes the
+exact-match assertion fail unless the same tag is added to `SUPPORTED_LOCALES`
+(alphabetically sorted — note ASCII order puts `zh-HK` before `zh-Hans` before
+`zh-TW`). The `locale-completeness.test.ts` file then validates the new file:
+it passes on missing keys (partial translation is legal, vue-i18n falls back to
+`en-US`) but hard-fails on any key absent from `en-US.json`, so a new locale may
+declare no orphan keys. Verify with `npx vitest run src/tests/locale-completeness.test.ts src/tests/useLocale.test.ts`, then `npm run typecheck` and `npm run build`.
+
 ## Common Rationalizations
 
 | Rationalization | Reality |
