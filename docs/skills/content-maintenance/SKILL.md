@@ -96,6 +96,27 @@ warning (`TryBluefin.Wolves.Cards.AlphaBadge` / `AlphaBadgeSub`); Utah uses the
 title-only `TryBluefin.Wolves.Cards.ComingSoonBadge`. Keep those statuses
 explicit per card rather than applying one shared status to the entire array.
 
+## Adding a new locale
+
+`src/locales/schema.ts` bundles locales with `import.meta.glob('./*.json', { eager: true })`,
+so dropping the JSON file in is enough at runtime — there is no registry to
+edit. Two non-obvious consequences:
+
+- `src/tests/useLocale.test.ts` hardcodes the expected bundle in
+  `SUPPORTED_LOCALES` and asserts exact equality on
+  `Object.keys(i18n.global.messages).sort()`. A new locale file fails that
+  test until the tag is added to the list, kept in sort order.
+- `npx vitest run src/tests/locale-completeness.test.ts` currently has four
+  recorded failures on `main` — `de-DE`, `fr-FR`, `ko-KR` and `pt-BR` each
+  declare `TopBar.AskBluefin`, which `en-US.json` does not. That is a
+  pre-existing baseline, not something a new locale caused; check the failing
+  filenames before believing you broke it.
+
+Verify a new locale's strings actually resolve through vue-i18n (not just that
+the JSON parses) with a throwaway probe that calls
+`i18n.global.t('Some.Key', {}, { locale: '<tag>' })` — passing the locale as
+the third argument is required, since the global instance defaults to `en-US`.
+
 ## Verification
 
 - [ ] Diff contains only content, data, or approved assets.
