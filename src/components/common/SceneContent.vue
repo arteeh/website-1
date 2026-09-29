@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { MessageSchema } from '../../locales/schema'
 import { useElementVisibility, watchOnce } from '@vueuse/core'
-import { marked } from 'marked'
-
 import { ref } from 'vue'
+
 import { useI18n } from 'vue-i18n'
+import { renderMarkdown } from '../../utils/markdown'
 
 const props = defineProps<{
   tag: string
@@ -50,7 +50,7 @@ const { t } = useI18n<MessageSchema>({
     </div>
     <div>
       <div>
-        <p v-html="marked.parse(t(props.text) ?? '')" />
+        <p v-html="renderMarkdown(t(props.text) ?? '')" />
         <slot />
       </div>
     </div>

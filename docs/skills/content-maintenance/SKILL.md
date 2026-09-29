@@ -88,6 +88,19 @@ stay in the source form even in a complete translation: author attributions
 card product names such as `TryBluefin.Wolves.Cards.Dakota`. Translate the copy
 around them (`AlphaBadgeSub`, `ServerDescription`), not the names.
 
+## Locale HTML rendering
+
+Locale strings may contain markdown and a small set of raw HTML tags (`<br>`,
+`<b>`, `<strong>`, `<a href target>`), and components render them with
+`v-html`. Every locale string bound to `v-html` must go through
+`src/utils/markdown.ts` (`renderMarkdown`, `renderMarkdownInline`, or
+`sanitizeHtml`) — never a bare `marked.parse()` or a raw `t()` value. The
+helper sanitizes with `sanitize-html`, which parses via htmlparser2 and
+therefore behaves identically in the browser bundle and in the happy-dom test
+environment. Do not switch it to DOMPurify: under happy-dom, DOMPurify reports
+`isSupported === true` but returns markup unsanitized and drops leading text
+nodes, so component tests both miss real injection and fail on correct output.
+
 ## Front-page downloads
 
 The three main-site download cards are owned by

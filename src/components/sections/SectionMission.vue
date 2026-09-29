@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { MessageSchema } from '../../locales/schema'
-import { marked } from 'marked'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { LangMissionBluefinImageURL } from '../../content'
+import { renderMarkdown } from '../../utils/markdown'
 
 import SceneContent from '../common/SceneContent.vue'
 import SceneQuote from '../common/SceneQuote.vue'
@@ -27,13 +27,13 @@ const { t } = useI18n<MessageSchema>({
         @visible="vis = true"
       >
         <p
-          v-html="marked.parse(t('Mission.Text.Change'))"
+          v-html="renderMarkdown(t('Mission.Text.Change'))"
         />
         <p
-          v-html="marked.parse(t('Mission.Text.CloudNative'))"
+          v-html="renderMarkdown(t('Mission.Text.CloudNative'))"
         />
         <p
-          v-html="marked.parse(t('Mission.Text.Sustainability'))"
+          v-html="renderMarkdown(t('Mission.Text.Sustainability'))"
         />
         <SceneQuote
           quote="SpreadQuote.Quote"
@@ -41,7 +41,7 @@ const { t } = useI18n<MessageSchema>({
           link="SpreadQuote.WikiLink"
         />
         <div
-          v-html="marked.parse(t('Mission.CleverGirl'))"
+          v-html="renderMarkdown(t('Mission.CleverGirl'))"
         />
       </SceneContent>
 

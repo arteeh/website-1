@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { MessageSchema } from '../../locales/schema'
 
-import { marked } from 'marked'
 import { useI18n } from 'vue-i18n'
+import { renderMarkdown } from '../../utils/markdown'
 
 const { t } = useI18n<MessageSchema>({
   useScope: 'global'
@@ -26,8 +26,8 @@ const { t } = useI18n<MessageSchema>({
     </div>
 
     <div class="container moderate">
-      <div class="content" v-html="marked.parse(t('Video.Text.Passion'))" />
-      <div class="content" v-html="marked.parse(t('Video.Text.StateOfTheArt'))" />
+      <div class="content" v-html="renderMarkdown(t('Video.Text.Passion'))" />
+      <div class="content" v-html="renderMarkdown(t('Video.Text.StateOfTheArt'))" />
     </div>
   </section>
 </template>

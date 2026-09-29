@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { MessageSchema } from '../../locales/schema'
-import { marked } from 'marked'
-
 import { useI18n } from 'vue-i18n'
+
 import { LangAlumniCompanies, LangPoweredBy, LangSocialLinks, LangSponsors } from '../../content'
+import { renderMarkdown } from '../../utils/markdown'
 
 const { t } = useI18n<MessageSchema>({
   useScope: 'global'
@@ -100,7 +100,7 @@ const { t } = useI18n<MessageSchema>({
             </span>
           </a>
         </p>
-        <div v-html="marked.parse(t('Footer.Project.Ublue'))" />
+        <div v-html="renderMarkdown(t('Footer.Project.Ublue'))" />
         <ul class="footer-links">
           <li v-for="item in LangSocialLinks" :key="item.text">
             <a :href="item.link">
@@ -110,14 +110,14 @@ const { t } = useI18n<MessageSchema>({
           </li>
         </ul>
         <hr>
-        <p v-html="marked.parse(t('Footer.Credits.Intro'))" />
+        <p v-html="renderMarkdown(t('Footer.Credits.Intro'))" />
         <ul>
-          <li v-html="marked.parse(t('Footer.Credits.Website'))" />
-          <li v-html="marked.parse(t('Footer.Credits.Logos'))" />
-          <li v-html="marked.parse(t('Footer.Credits.ImageEdit'))" />
-          <li v-html="marked.parse(t('Footer.Credits.Wallpapers'))" />
-          <li v-html="marked.parse(t('Footer.Credits.Translations'))" />
-          <li v-html="marked.parse(t('Footer.Credits.Thanks'))" />
+          <li v-html="renderMarkdown(t('Footer.Credits.Website'))" />
+          <li v-html="renderMarkdown(t('Footer.Credits.Logos'))" />
+          <li v-html="renderMarkdown(t('Footer.Credits.ImageEdit'))" />
+          <li v-html="renderMarkdown(t('Footer.Credits.Wallpapers'))" />
+          <li v-html="renderMarkdown(t('Footer.Credits.Translations'))" />
+          <li v-html="renderMarkdown(t('Footer.Credits.Thanks'))" />
         </ul>
 
         <div style="flex: 1" />
