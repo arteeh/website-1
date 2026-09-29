@@ -83,7 +83,21 @@
   },
   "TryBluefin": {
     "Tag": "Experimente",
-    "Title": "Bluefin"
+    "Title": "Bluefin",
+    "LegacyDownloads": "As versões mais antigas baseadas no Fedora [ainda estão disponíveis para download](https://docs.projectbluefin.io/downloads/) mas não são recomendadas para novos usuários.",
+    "Wolves": {
+      "Cards": {
+        "AlphaBadge": "⚠️ Alpha.",
+        "AlphaBadgeSub": "Tenham cautela adequada.",
+        "ComingSoonBadge": "Em breve",
+        "Dakota": "Dakota",
+        "DakotaDescription": "A forma final. Bluefin perfeccionada.",
+        "Utah": "Utah",
+        "UtahDescription": "",
+        "Server": "Bluefin Server",
+        "ServerDescription": "O sistema operacional de servidor FSDK mais importante do mundo."
+      }
+    }
   },
   "Community": {
     "Tag": "Nossa",
@@ -96,6 +110,7 @@
       "DiscussionsButton": "Discussões"
     },
     "Contribute": {
+      "Tag": "Nossos Colaboradores",
       "Title": "Contribua",
       "Description": "Ajude a desenvolver a Bluefin contribuindo no código, reportando problemas (bugs) ou sugerindo melhorias e novos recursos. Você também pode apoiar os contribuintes se desejar contribuir financeiramente.",
       "Button": "Visite nosso GitHub",
@@ -112,7 +127,8 @@
     "Title": "Nosso Bando",
     "Description": "Bluefin é feita por um grupo dedicado de contribuidores e mantenedores.",
     "AlumniTitle": "Com ex-colaboradores de empresas como",
-    "SponsorsTitle": "Nossos patrocinadores"
+    "SponsorsTitle": "Nossos patrocinadores",
+    "Attribution": "Estatísticas fornecidas por"
   },
   "Footer": {
     "PoweredBy": "Feito com",
