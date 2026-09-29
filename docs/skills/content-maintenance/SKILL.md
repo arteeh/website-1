@@ -89,6 +89,32 @@ explicit per card rather than applying one shared status to the entire array.
 - [ ] Unlisted status is unchanged.
 - [ ] Relevant checks pass.
 
+## Locale parity for a new or completed translation
+
+Adding `src/locales/<tag>.json` is not the whole change. Locales are bundled
+eagerly by the glob in `src/locales/schema.ts`, so a new file is picked up
+automatically — but `src/tests/useLocale.test.ts` asserts the exact set of
+bundled locale tags and will fail until the new tag is added to
+`SUPPORTED_LOCALES`.
+
+Per-value invariants to check against `en-US.json` before committing:
+
+- Flat key set is identical, with no orphans (`locale-completeness.test.ts`
+  fails hard on orphans; missing keys are advisory only, because vue-i18n falls
+  back to `en-US`).
+- URL list, HTML tag list, `{placeholder}` list, and Markdown-link count in each
+  value are unchanged. Translate the link *text*, never the target.
+- Proper nouns and brand names stay in their original spelling
+  (`Flathub`, `Kubernetes`, `Podman Desktop`, `JetBrains IDEs`, `Dakota`,
+  `Utah`, `Commander Zavala`).
+- Where the source value is an empty string (for example
+  `TryBluefin.Wolves.Cards.UtahDescription`), the translation stays empty.
+
+A quick throwaway script that flattens both files and diffs those four lists
+catches nearly every copy-paste slip before the test run. Re-derive the source of
+truth rather than trusting an existing locale file: some carry values that have
+drifted from current `en-US.json` copy.
+
 ## References
 
 - `../../reference/content-map.md`
